@@ -1,0 +1,286 @@
+
+										/*Header*/
+
+			
+.main__header__about {
+	width: 100%;
+	min-height: auto;
+	height: auto;
+	background-color: #fff;
+	background-image: url(../img/16.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	/* background-attachment: fixed; */
+	box-shadow: inset 0 1px 10px #000;
+}
+												/*First-section*/
+
+h3 {
+	margin-bottom: 15px;
+}				
+
+.about__us {
+    margin-top: 30px;
+    padding: 25px; 
+    margin-bottom: 30px;
+}
+
+.first__section__about__container{
+	padding: 5px;
+}
+
+.advantage__about {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.advantage__about .advantage {
+	width: 22%;
+    margin-bottom: 40px;
+}
+
+
+												/*Second-section*/
+.second__section__about {
+	background-image: url(../img/16.jpg);
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 50px 10px;
+} 
+
+.our__command {
+	box-shadow: 1px 1px 5px #000;
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: rgba(255,255,255,0.8);
+}	
+
+.our__command__people {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+
+.our__command__people__man {
+	width: 200px;
+	margin: 5px;
+	padding: 5px;
+	background-color: #000;
+	color: #fff;
+	box-shadow: 2px 2px 4px #000;
+}
+
+.our__command__people__man img {
+	display: block;
+	width: 180px;
+	height: 180px;
+	background-color: #000;
+	border-radius: 50%;
+	margin: 10px auto;
+	background-image: url(../img/Gulevich.jpg);
+	background-size: cover;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+
+.our__command__people__man:nth-child(2) img {
+	background-image: url(../img/Valeriy.JPG);
+}
+
+.our__command__people__man:nth-child(3) img {
+	background-image: url(../img/Mikhail.jpg);
+	background-position: center;
+}
+
+.our__command__people__man:nth-child(4) img {
+	background-image: url(../img/Edic.JPG);
+}
+
+.our__command__people__man span {
+	display: inline-block;
+	margin: 20px auto;
+	font-size: 1.2rem;
+}
+
+.our__command__people__man p {
+	padding: 5px;
+}
+
+												/*Second-section*/
+												/*Third-section*/
+.third__section__about {
+	border: none;
+	box-shadow: none;
+	margin-top: 50px;
+}
+
+													/*Fourth-section*/
+
+.fourth__section__about__container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.our__standarts__container,
+.our__mission__container {
+	padding: 10px 10px;
+	width: 100%;
+	display: block;
+
+}
+
+.our__mission,
+.our__standarts {
+	width: 35%;
+	text-align: left;
+}
+
+.our__standarts {
+	width: 44%;
+	margin-left: auto;
+	text-align: right;
+}
+
+.our__standarts li {
+	margin-bottom: 20px;
+}
+
+.our__standarts h3,
+.our__mission h3 {
+	border-bottom: 2px solid #455;
+    padding: 0;
+    line-height: 2.6rem;
+    margin: 0;
+}
+
+.our__mission__container,
+.our__standarts__container {
+	background-image: url(../img/newImg_8.jpeg);
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;	
+	box-shadow: 1px 1px 5px #000;
+	box-shadow: inset 300px 0px 100px #fafafa; 
+	margin-top: 20px;
+}
+
+.our__mission span {
+    margin-top: 15px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.our__mission p {
+	line-height: 30px;
+}
+
+.our__standarts__container {
+	background-image: url(../img/newImg_2.jpeg);
+	box-shadow: inset -300px 0px 100px #fafafa;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 930px) {
+	.advantage__about  .advantage{
+		width: 320px;
+	}
+
+	.our__command__people__man {
+		width: 320px;
+		margin-bottom: 20px;  
+	}
+}
+
+@media (max-width: 810px) {
+	.advantage__about .advantage {
+		width: 300px;
+	}
+
+	.our__command__people__man {
+		width: 280px;
+	}
+}
+
+@media (max-width: 655px) {
+	.our__command__people__man {
+		width: 320px;
+		margin-left: 5px;
+   		margin-right: 5px;
+	}	
+
+	.our__mission,
+	.our__standarts {
+		width: 65%;
+	}
+}
+
+@media (max-width: 480px) {
+
+	.main__header {
+		min-height: 400px;
+	}
+
+	.advantage__about .advantage {
+		width: 260px;
+	}
+
+	.our__command {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.our__command__people__man {
+		width: 300px;
+	}
+
+	.our__mission,
+	.our__standarts {
+		width: 85%;
+	}
+
+	.our__mission__container {
+		box-shadow: inset -300px 0px 200px #fafafa;	
+	}
+
+	.our__standarts__container {
+		box-shadow: inset 300px 0px 200px #fafafa; 
+	}
+}
+
+@media (max-width: 390px) {
+
+	.advantage__about .advantage {
+		width: 220px;
+		margin: 0 auto 40px auto;
+	}
+
+	.our__command__people__man {
+		width: 280px;
+	}
+
+	.our__mission,
+	.our__standarts {
+		width: 95%;
+	}
+
+	.our__mission__container {
+		box-shadow: inset 250px 0px 200px #fafafa; 
+	}
+
+	.our__standarts__container  {
+		box-shadow: inset -250px 0px 200px #fafafa;
+	}
+
+}

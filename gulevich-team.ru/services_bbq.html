@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/services_banquet.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="web-fonts/css/fontawesome-all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Play" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icons/favicon.png" type="image/x-icon">
+    <title>Gulevich-Team - BBQ</title>
+</head>
+
+<body>
+    <header class="main__header main__header__contacts">
+        <div class="header__top">
+            <div class="container header__content">
+                <a href="index.html">
+                    <div class="logo__min"></div>
+                </a>
+                <ul class="header__nav__main">
+                    <li class="header__nav__main__link"><a href="index.html">
+                            <div class="logo"></div>
+                        </a></li>
+                    <li class="header__nav__main__link"><a href="about.html">О нас</a></li>
+                    <li class="header__nav__main__link"><a href="services.html">Услуги</a></li>
+                    <li class="header__nav__main__link"><a href="galery.html">Галерея</a></li>
+                    <li class="header__nav__main__link"><a href="platforms.html">Площадки</a></li>
+                    <li class="header__nav__main__link"><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <a class="button header__button" id="modal" href="#">Заказать кейтеринг</a>
+                <div class="burger" id="burger">&#9776;</div>
+            </div>
+        </div>
+        <div class="burger__menu hide">
+            <div class="burger__menu__list"><a href="about.html">О нас</a></div>
+            <div class="burger__menu__list"><a href="services.html">Услуги</a></div>
+            <div class="burger__menu__list"><a href="galery.html">Галерея</a></div>
+            <div class="burger__menu__list"><a href="platforms.html">Площадки</a></div>
+            <div class="burger__menu__list"><a href="contacts.html">Контакты</a></div>
+        </div>
+    </header>
+    <main>
+        <div class="first__section">
+            <div class="container">
+                <div class="first__section__service__banquet">
+                    <div class="first__section__service__banquet__text">
+                        <h3>Барбекю</h3>
+                        <p>Барбекю - это дружная веселая компания на природе, разговоры по душам, приятный отдых в сочетании со свежим воздухом и едой! Только представьте: ароматные шашлычки и пикантные колбаски, люля-кебаб, аппетитные крылышки и стейки из рыбы, овощи и напитки. Обо всем этом позаботится наша команда!</p>
+                        <p>Данный формат подойдет для празднования любог
+                        о мероприятия! Большое преимущество барбекю состоит в том, что количество гостей для празднования на природе не ограничено, поэтому можно смело организовать корпоративный выезд на природе для крупной компании, а "Gulevich Catering Team" гарантирует организацию барбекю на высшем уровне!</p>
+                    </div>
+                    <div class="first__section__service__bbq__img"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="second__section__banquet">
+            <div class="container second__section__container">
+                <div class="second__section__banquet__slider">
+                    <img src="" alt="" class="slider__img">
+                </div>                
+            </div>
+        </div> -->
+        <!-- <div class="third__section">
+            <div class="container">
+                <div class="third__section__container">
+                    <form action="post" id="action__form" class="third__section__form">
+                        <label for="action__form">Оставьте заявку</label>
+                        <div class="action__form__name">                    
+                            <label for="name">Ваше Имя</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="action__form__tel">
+                            <label for="tel">Телефон</label>
+                            <input type="text" id="tel" required>
+                        </div>
+                        <input type="submit" value="Заказать" class="action__form__button">
+                    </form>
+                </div>
+            </div>
+        </div> -->
+        <div class="fourth__section fourth__section_bbq">
+            <div class="container">
+                <div class="fourth__section__service__banquet">
+                    <h4>Выбирите вариант меню</h4>
+                    <div class="fourth__section__service__banquet__price">
+                        <ul class="menu__list">
+                            <li class="menu__class__btn active">Русский <br>стиль</li>
+                            <li class="menu__class__btn active">Восточный <br>стиль</li>
+                            <li class="menu__class__btn active">Азиатский <br>стиль</li>
+                            <li class="menu__class__btn active">Американский <br>стиль</li>
+                        </ul>
+                        <div class="menu__class show">
+                            <div class="pop_up_menu_economy">
+                                <h2>Русский стиль</h2>
+                                <p>2000р на одну персону<br>
+                                    Включает обслуживающий персонал и сервировку</p>
+                                <div class="menu_table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>Закуски</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Салат из свежей капусты и маринованных груздей</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Капуста свежая, морковь, грузди маринованные, постное масло</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Салат «Фермерский» из свежих овощей (зеленые яблоки, сельдерей, редис, листья салата, заправка из йогурта)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Салат с копченой курицей и ржаными гренками</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Курица копченая, томаты черри, сыр эдем, листья салата, заправка сливочный хрен</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Слабосоленые огурцы собственной засолки</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Салат из редьки и свежих огурцов и томатов (заправка : постное масло/ сметана фермерская)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Садовая зелень</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>BBQ BUFFETS</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Цельная форель с обжаренным лимоном на гриле</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Фермерский цыплёнок на гриле с томатно-чесночным соусом</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Корейка из свинины на кости с грибным соусом</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Колбаски из говядины и свинины со специями на гриле с фирменным соусом барбекю</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Гарниры</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Печеный картофель в мундире</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Хлеб</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Бородинский хлеб, пшеничные булочки, злаковые булочки</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="desc">
+                                        <p>
+                                            Выход блюд на персону 1200г<br>
+                                            Блюда доставляются в одноразовых подносах с прозрачными крышками
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__class show">
+                            <div class="pop_up_menu_standart">
+                                    <h2>Восточный стиль</h2>
+                                    <p>2000р на одну персону<br>
+                                        Включает обслуживающий персонал и сервировку</p>
+                                <div class="menu_table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>Закуски</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Салат из бакинских томатов с тархуном и сладким луком </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Салат из овощей гриль с аджикой и кинзой</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Салат «Лобио» из красной фасоли с луком и чесноком</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Долма из говядины с чесночным соусом</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Жареные баклажаны с сыром и чесноком</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Сыр сулугуни</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Салат из садовых огурцов и редиса с зеленым луком</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Садовая зелень</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>BBQ BUFFETS</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Цыпленок на гриле, маринованный в острых специях</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Шашлык из корейки дагестанского барашка</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Шашлык из свинины, маринованный в домашнем вине</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Люля-кебаб из говядины и свинины со специями</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Гарниры</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Кебаб из печеного картофеля</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Кебаб из овощей</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Соусы</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>«Абхазская аджика»</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>«Ткемали»</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>«Чесночный с зеленью»</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Хлеб</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Тонкий лаваш, лаваш из тандыра</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="desc">
+                                        <p>
+                                            Выход блюд на персону 1200г<br>
+                                            Блюда доставляются в одноразовых подносах с прозрачными крышками
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__class show">
+                            <div class="pop_up_menu_business">
+                                    <h2>Азиатский стиль</h2>
+                                    <p>3000р на одну персону<br>
+                                        Включает обслуживающий персонал и сервировку</p>
+                                <div class="menu_table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>Закуски</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Тайский салат с ломтиками говядины и овощами 
+                                                        (листья ромейна, красный лук, томаты черри, свежие огурцы, редис, кинза, 
+                                                        ростбиф из говядины , заправляется кунжутным маслом)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Салат с мидиями и томатами черри (листья салата, мидии, икра масага,
+                                                        томаты черри, соус миссо)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Салат из авокадо и свежих овощей (авокадо, томаты черри, огурцы, 
+                                                        красный лук, зеленый лук, кинза, имбирно-лаймовая заправка)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Салат из дайкона, с кукурузой и кальмарами (дайкон, свежая морковь, 
+                                                        кольца кальмаров, кукуруза, заправляется «Тайским соусом»)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Сашими-салат с лососем (листья рукколы, томаты черри, ломтики лосося, 
+                                                        кунжут, заправляется соусом «Мацухиса»)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>BBQ BUFFETS</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Кебаб из тигровых креветок с салатом «Коктейль» (тигровые креветки обжаренные 
+                                                        на гриле, салат коктейль из каперсов, красного лука, томатов черри)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Соте из курицы по-тайски с манговым чатни и гарниром из свежих огурцов 
+                                                        (маринованные кусочки курицы в острых специях, гарнир из свежих огурцов, 
+                                                        и соус из манго)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ломтики свинины по-Азиатски с тайским соусом (корейка из свинины, 
+                                                        маринованная в кокосовом молоке, обжаривается на гриле)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Острые куриные крылышки с соусом BBQ</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Гарниры</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Рис по-азиатски с яйцом с обжаренными овощами</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Баклажаны с кунжутом</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Хлеб</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Деревенские лепешки</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="desc">
+                                        <p>
+                                            Выход блюд на персону 1200г<br>
+                                            Блюда доставляются в одноразовых подносах с прозрачными крышками
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__class show">
+                            <div class="pop_up_menu_lux">
+                                    <h2>Американский стиль</h2>
+                                    <p>3000р на одну персону<br>
+                                        Включает обслуживающий персонал и сервировку</p>
+                                <div class="menu_table">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>Закуски</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Стейк салат с руколой и ростбифом (листья рукколы, ростбиф из говядины, томаты черри,
+                                                        соус «Мацухиса»)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Хрустящий айсберг с соусом блю-чиз (салат айсберг, томаты черри, сыр блю-чиз, 
+                                                        жареный бекон)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Знаменитый техасский салат «Coleslowe» (свежая красная капуста, морковь, 
+                                                        сельдерей, петрушка, соус «Дижон»)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Салат из грунтовых томатов и огурцов с листьями салата</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Томаты черри с сыром моцарелла «Буффало» (томаты черри, сыр моцарелла, соус песто,
+                                                        бальзамический крем)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>BBQ BUFFETS</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Техасская курица, маринованная в специях и в пиве, с горячим перечным соусом</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Стейк «Томагавк» из свинины на косточке с соусом «Чимичури»</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Знаменитые свиные глазированные ребрышки «Сент-Луис»</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Стейк из филе говядины «Колорадо» с фирменным соусом BBQ</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fish & Chips (кусочки рыбы обжаренные в кляре с картофельными чипсами и соусом «Тар-тар»)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Гарниры</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Jacket potato (картофель запечённый в мундире с крем-чизом)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Початок кукурузы на гриле или на пару</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Хлеб</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Свежеиспеченные булочки</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="desc">
+                                    <p>
+                                        Выход блюд на персону 1200г<br>
+                                        Блюда доставляются в одноразовых подносах с прозрачными крышками
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container footer__container">
+            <ul class="footer__nav__main">
+                <li class="footer__nav__main__link">
+                    <a>Меню</a>
+                    <ul class="footer__nav__sub">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="galery.html">Галерея</a></li>
+                        <li><a href="platforms.html">Площадки</a></li>
+                    </ul>
+                </li>
+                <li class="footer__nav__main__link">
+                    <a href="services.html">Услуги</a>
+                    <ul class="footer__nav__sub">
+                        <li><a href="services_coffe.html">Кофе-Брейк</a></li>
+                        <li><a href="services_bbq.html">Барбекю</a></li>
+                        <li><a href="services_furshet.html">Фуршет</a></li>
+                        <li><a href="services_banquet.html">Банкет</a></li>
+                    </ul>
+                </li>
+                <li class="footer__nav__main__link">
+                    <a href="contacts.html">Контакты</a>
+                    <ul class="footer__nav__sub">
+                        <li>
+                            <a href="tel:+79111981424">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>+79111981424</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:Zakazfood@inbox.ru">
+                                <i class="fas fa-envelope"></i>
+                                <span>Zakazfood@inbox.ru</span>
+                            </a>
+                        </li>
+                        <li class="footer__nav__sub__link__social">
+                            <a href="https://api.whatsapp.com/send?phone=79111981424"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://instagram.com/gulevich_catering_team_?utm_source=ig_profile_share&igshid=3eimwv3u9cav"><i class="fab fa-instagram"></i></a>
+                            <a href="https://vk.com/gtcatering"><i class="fab fa-vk"></i></a>
+                            <!-- <a href="facebook.com"><i class="fab fa-facebook-f"></i></a> -->
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer__nav__main__link">
+                    <a href="https://api.whatsapp.com/send?phone=79111981424"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://instagram.com/gulevich_catering_team_?utm_source=ig_profile_share&igshid=3eimwv3u9cav"><i class="fab fa-instagram"></i></a>
+                    <a href="https://vk.com/gtcatering"><i class="fab fa-vk"></i></a>
+                    <!-- <a href="facebook.com"><i class="fab fa-facebook-f"></i></a> -->
+                </li>
+            </ul>
+            <div class="footer__aside">
+                <a class="button footer__button" id="modal" href="#">Заказать кейтеринг</a>
+                <a href="index.html">
+                    <div class="logo"></div>
+                </a>
+                <span>Copyright &copy; 2018<br>created by Midze</span>
+            </div>
+        </div>
+    </footer>
+    <!-- modal -->
+    <div class="modal__container">
+        <span class="modal__close">X</span>
+        <form id="form" class="modal__form">
+            <label for="modal__form" class="modal__form__label">Оставьте заявку</label>
+            <div class="modal__form__name">
+                <label for="modal__name">Имя</label>
+                <input type="text" name="name" id="modal__name" required>
+            </div>
+            <div class="modal__form__tel">
+                <label for="modal__tel">Телефон</label>
+                <input type="text" name="phone" id="modal__tel" required>
+            </div>
+            <div class="modal__form__email">
+                <label for="modal__tel">Почта</label>
+                <input type="text" name="email" id="modal__email" required>
+            </div>
+            <div class="terms">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">Я даю согласие на обработкуперсональных данных</label>
+            </div>
+            <input id="button" type="submit" name="button" value="Заказать" class="action__form__button">
+        </form>
+    </div>
+    <div class="overlay"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/send.js"></script>
+    <script src="js/menu_slider.js"></script>
+</body>
+
+</html>

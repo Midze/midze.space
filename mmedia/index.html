@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/build/mediaelementplayer.min.css">
+    <link rel="stylesheet" href="assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/slick/slick.css">
+    <link href="assets/pace/pace-theme-flat-top.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/pace/pace.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="preloader">
+        
+    </div>
+    <div class="blocks-overlay">
+        <div class="rectangle">
+            <img src="img/block_1.png" alt="">
+        </div>
+        <div class="rectangle">
+            <img src="img/block_2.png" alt="">
+        </div>
+        <div class="rectangle">
+            <img src="img/block_3.png" alt="">
+        </div>
+        <div class="rectangle">
+            <img src="img/block_4.png" alt="">
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="logo" onclick="$.scrollify.move(0);">
+                <img src="img/logo.png" id="logo" alt="logo">
+            </div>
+            <div class="nav">
+                <div class="burger">☰</div>
+                <div class="close">+</div>
+                <ul class="nav-list">
+                    <li data-section="2" class="nav-link" onclick="$.scrollify.move(1);">Мы</li>
+                    <li data-section="3" class="nav-link" onclick="$.scrollify.move(2);">Делаем</li>
+                    <li data-section="4" class="nav-link" onclick="$.scrollify.move(3);">Видео</li>
+                    <li data-section="form" class="nav-link contacts-link" onclick="$.scrollify.move(6);">Контакты</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <video class="main-video" width="100%" height="100%" playsinline webkit-playsinline controls='false' autobuffer
+            autoplay preload="auto" loop="loop" data-keepplaying muted="true">
+            <source src="main-video.mp4" type="video/mp4" />
+        </video>
+        <section class="section main-section home" data-section-name="home">
+
+            <div class="section-content">
+                <div class="container">
+                    <div class="content">
+                        <h1 class="page-title">Креативный видеопродакшн для бизнеса "под ключ"!</h1>
+                        <p>Проведем бесплатный аудит вашего бизнеса и предложим варианты по запуску</p>
+                        <a href="#" class="button  pop-up-btn-showreal">Смотреть шоурил</a>
+                        <div class="creator">                        
+                            <span>Разработано компанией </span>
+                            <a href="https://likeit.by/"><img src="img/likeIT.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section about-section" data-section-name="1">
+            <div class="container">
+                <div class="content">
+                    <h2 class="section-title wow bounceInLeft">О нас</h2>
+                    <div class="content-text wow bounceInRight">
+                        <a href="#" class="link" onclick="event.preventDefault();">Мы</a> осуществляем полный цикл производства: от креатива до готового
+                        ролика.
+                        Наша специализация - графический контент, трансляции, отчетные видео, документальные и рекламные
+                        ролики.
+                        Наши <a href="#" class="link" onclick="event.preventDefault();">КЛИЕНТЫ</a> - крупные бренды, событийные и рекламные агентства. В
+                        нашей <a href="#" class="link" onclick="event.preventDefault();">КОМАНДЕ</a> опытные специалисты,
+                        но мы открыты к <a href="#" class="link" onclick="event.preventDefault();">МОЛОДЫМ ТАЛАНТАМ</a>
+                    </div>
+                    <a href="#" class="pdf">СКАЧАТЬ ПРЕЗЕНТАЦИЮ</a>
+                </div>
+            </div>
+        </section>
+        <section class="section service-section" data-section-name="2">
+            <!-- <img src="img/bg.jpg" alt=""> -->
+            <div class="section-content">
+                <div class="container">
+                    <div class="content">
+                        <div class="content-top">
+                            <h2 class="section-title">Наши <span>услуги</span></h2>
+                            <div class="slider-nav">
+                                <div class="arrow arrow-next service-prev"></div>
+                                <span class="current service-current">1</span> <span class="separator">|</span> <span
+                                    class="total service-total">3</span>
+                                <div class="arrow arrow-prev service-next"></div>
+                            </div>
+                        </div>
+                        <div class="service-slider">
+                            <div class="service-slide wow bounceInRight">
+                                <img src="img/service_1.jpg" alt="">
+                                <div class="slide-overlay">
+                                    <div class="slide-number">01</div>
+                                    <h4 class="slider-name">Создание Ютуб канала</h4>
+                                    <div class="slider-text">Все знают, все смотрят, все хотят, но не каждый знает КАК.
+                                        Мы не только знаем, но и делаем... в нашем портфолио каналы, которые знают и
+                                        любят тысячи беларусов: автоостров, автогарант, 24 шоп бай, minski и т.д.</div>
+                                    <div class="button pop-up-btn" data-name="Создание Ютуб канала">Заказать</div>
+                                </div>
+                            </div>
+                            <div class="service-slide wow bounceInRight" data-wow-delay="0.1s">
+                                <img src="img/service_2.jpg" alt="">
+                                <div class="slide-overlay">
+                                    <div class="slide-number">02</div>
+                                    <h4 class="slider-name">Таргетированное видео</h4>
+                                    <div class="slider-text">Видео для таргетированной – 1 минутный видоролик, который
+                                        конвертирует «зрителя» в «покупателя». Такие видео показывают свою эффективность
+                                        на площадках YouTube и Instagram.</div>
+                                    <div class="button pop-up-btn" data-name="Таргетированное видео">Заказать</div>
+                                </div>
+                            </div>
+                            <div class="service-slide wow bounceInRight" data-wow-delay="0.2s">
+                                <img src="img/service_3.jpg" alt="">
+                                <div class="slide-overlay">
+                                    <div class="slide-number">03</div>
+                                    <h4 class="slider-name">Видео для HR-отделов</h4>
+                                    <div class="slider-text">Видео для соискателей. Размещая видеоролик о вакансии- Вы
+                                        увеличиваете КАЧЕСТВО претендентов на должность с площадок по поиску работы, а
+                                        это экономия рабочего времени и увеличения эффективности Вашего HR отдела.</div>
+                                    <div class="button pop-up-btn" data-name="Видео для HR-отделов">Заказать</div>
+                                </div>
+                            </div>
+                            <div class="service-slide wow bounceInRight" data-wow-delay="0.3s">
+                                <img src="img/service_4.jpg" alt="">
+                                <div class="slide-overlay">
+                                    <div class="slide-number">04</div>
+                                    <h4 class="slider-name">Имиджевое видео</h4>
+                                    <div class="slider-text">Суть такого рода контента кроется в его названии. Презентация чего-либо, донесение информации до потенциального клиента. Какие сферы деятельности охватывает компания, какие продукты производит, каких достижений добилась за время своего существования. …</div>
+                                    <div class="button pop-up-btn" data-name="Имиджевое видео">Заказать</div>
+                                </div>
+                            </div>
+                            <div class="service-slide wow bounceInRight" data-wow-delay="0.3s">
+                                <img src="img/service_5.jpg" alt="">
+                                <div class="slide-overlay">
+                                    <div class="slide-number">05</div>
+                                    <h4 class="slider-name">Видео- коммерческое предложение</h4>
+                                    <div class="slider-text">В современном мире, почти половина всего населения земли, а это, на минуточку, очень много людей, предпочитают воспринимать информацию зрительно или на слух. Обилие гаджетов с небольшими …</div>
+                                    <div class="button pop-up-btn" data-name="Видео- коммерческое предложение">Заказать</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section service-section portfolio-section" data-section-name="3">
+            <!-- <img src="img/bg.jpg" alt=""> -->
+            <div class="section-content">
+                <div class="container">
+                    <div class="content">
+                        <div class="content-top">
+                            <h2 class="section-title">Наше <span>портфолио</span></h2>
+                            <div class="slider-nav">
+                                <div class="arrow arrow-next portfolio-prev"></div>
+                                <span class="portfolio-current">1</span> <span class="separator">|</span> <span
+                                    class="portfolio-total">3</span>
+                                <div class="arrow arrow-prev portfolio-next"></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-slider">
+                            <div class="portfolio-slide">
+                                <img src="img/portfolio_1.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-number">01</div>
+                                    <div class="portfolio-name">Имиджевое видео « Lumo»</div>
+                                    <div class="portfolio-text">
+                                        Демонстрация продукта для каждой целевой аудитории (татуировщик, визажист, блогер, фотограф, модель). Возможность интегрировать видео на продающий сайт для увеличения конверсии и продаж. 
+                                    </div>
+                                    <div data-portfolio="0" class="button portfolio-btn">Смотреть</div>
+                                </div>
+                            </div>
+                            <div class="portfolio-slide">
+                                <img src="img/portfolio_2.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-number">02</div>
+                                    <div class="portfolio-name">YouTube канал "Автоостров"</div>
+                                    <div class="portfolio-text">Создание медийной площадки на YouTube, для перенаправления трафика на сайт avtoosrov.by. Информирование целевой аудитории об акциях и новостях компании.
+                                    </div>
+                                    <div data-portfolio="1" class="button portfolio-btn">Смотреть</div>
+                                </div>
+                            </div>
+                            <div class="portfolio-slide">
+                                <img src="img/portfolio_3.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-number">03</div>
+                                    <div class="portfolio-name">Интерьерная съемка для Spa Riviera</div>
+                                    <div class="portfolio-text">Демонстрация интерьеров Spa Riviera, создание промо-видео для таргетированной рекламы Instagram.
+                                    </div>
+                                    <div data-portfolio="2" class="button portfolio-btn">Смотреть</div>
+                                </div>
+                            </div>
+                            <div class="portfolio-slide">
+                                <img src="img/portfolio_4.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-number">04</div>
+                                    <div class="portfolio-name">HR-видео для  «HR премии»</div>
+                                    <div class="portfolio-text">Актуализация профессии видеоинструментов в HR сфере. Доступно донести информацию о возможностях использования видео в решении HR задач.  
+                                    </div>
+                                    <div data-portfolio="3" class="button portfolio-btn">Смотреть</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content video hide" data-video="0">
+                <div class="video-container">
+                    <video autobuffer preload="auto" class="portfolio-video" width="100%" height="100%" poster="img/portfolio_1.jpg">
+                        <source src="https://www.youtube.com/watch?v=gAbSR8woaeM" type="video/youtube">
+                    </video>
+                    <div class="video-nav video-back"><span>Назад</span></div>
+                    <div class="video-nav video-more"><span>Подробнее о проекте</span></div>
+                </div>
+                <div class="portfolio-about hide">
+                    <h4>Имиджевое видео « Lumo»</h4>
+                    <div class="client">
+                        <div class="left title">Цель:</div>
+                        <div class="right">
+                            <div class="row">демонстрация продукта для каждой целевой аудитории (татуировщик, визажист, блогер, фотограф, модель). Возможность интегрировать видео на продающий сайт для увеличения конверсии и продаж.</div>
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="left title">Описание:</div>
+                        <div class="right">
+                            <div class="row">
+                                в рамках проекта проведены следующие работы: разработан концепт, разработан сценарий и по нему сделана раскадровка, поиск и аренда студии, задействовано 6 актеров, работа режиссера+оператор+гафер+менеджер проекта, два съемочных дня, видеомонтаж два дня. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="left title">Результат:</div>
+                        <div class="right">
+                            <div class="row">
+                                 увеличение конверсии продающего сайта, продажи через Instagram (настройка таргетированной рекламы на это видео), имиджевое видео, которое прикрепляется к каждому КП. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next-project">
+                        <span>Следующий проект</span>
+                        <div  class="next-button" data-next="1">YouTube канал "Автоостров"</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content video hide" data-video="1">
+                <div class="video-container">
+                    <video autobuffer preload="auto" class="portfolio-video" width="100%" height="100%" poster="img/portfolio_2.jpg">
+                        <source src="https://www.youtube.com/channel/UCEEK1Ec7iV21eDfCHE87zXw" type="video/youtube">
+                    </video>
+                    <div class="video-nav video-back"><span>Назад</span></div>
+                    <div class="video-nav video-more"><span>Подробнее о проекте</span></div>
+                </div>
+                <div class="portfolio-about hide">
+                    <h4>YouTube канал "Автоостров"</h4>
+                    <div class="client">
+                        <div class="left title">Цель:</div>
+                        <div class="right">
+                            <div class="row">Создание медийной площадки на YouTube, для перенаправления трафика на сайт avtoosrov.by. Информирование целевой аудитории об акциях и новостях компании.</div>
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="left title">Команда:</div>
+                        <div class="right">
+                            <div class="row">
+                                Менеджер проекта, интернет-маркетолог, ведущий, оператор, режиссер, видеоинженер (монтаж видео).
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="left title">Частота видео:</div>
+                        <div class="right">
+                            <div class="row">
+                                1 раз в неделю в течении 6 месяцев.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="left title">Результат:</div>
+                        <div class="right">
+                            <div class="row">
+                                Увеличение кол-ва подписчиков в 5 раз  (с 8.000 подписчиков  до 52.000) , кол-во просмотров от 30.000 до 500.000 в месяц, увеличение трафика продающего сайта на 11%, всплески продаж при информировании об акциях.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next-project">
+                        <span>Следующий проект</span>
+                        <div class="next-button" data-next="2">Интерьерная съемка для Spa Riviera</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content video hide" data-video="2">
+                <div class="video-container">
+                    <video autobuffer preload="auto" class="portfolio-video" width="100%" height="100%" poster="img/portfolio_3.jpg">
+                        <source src="https://www.youtube.com/watch?v=jKes_HVonpU" type="video/youtube">
+                    </video>
+                    <div class="video-nav video-back"><span>Назад</span></div>
+                    <div class="video-nav video-more"><span>Подробнее о проекте</span></div>
+                </div>
+                <div class="portfolio-about hide">
+                    <h4>Интерьерная съемка для Spa Riviera</h4>
+                    <div class="client">
+                        <div class="left title">Цель:</div>
+                        <div class="right">
+                            <div class="row">Демонстрация интерьеров Spa Riviera, создание промо-видео для таргетированной рекламы Instagram.</div>
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="left title">Над проектом работали:</div>
+                        <div class="right">
+                            <div class="row">
+                                Оператор, режиссер интерьерной съемки, гафер. Один съемочный день. В рамках проекта задействован квадрокоптер.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="left title">Результат:</div>
+                        <div class="right">
+                            <div class="row">
+                               Видеодемонстрация интерьеров Spa Riviera, привлечение аудитории посредством таргетированной рекламы Instagram и YouTube.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next-project">
+                        <span>Следующий проект</span>
+                        <div class="next-button" data-next="3">HR-видео для  «HR премии»</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content video hide" data-video="3">
+                <div class="video-container">
+                    <video autobuffer preload="auto" class="portfolio-video" width="100%" height="100%" poster="img/portfolio_4.jpg">
+                        <source src="https://www.youtube.com/watch?v=M33kwvCEak0" type="video/youtube">
+                    </video>
+                    <div class="video-nav video-back"><span>Назад</span></div>
+                    <div class="video-nav video-more"><span>Подробнее о проекте</span></div>
+                </div>
+                <div class="portfolio-about hide">
+                    <h4>HR-видео для  «HR премии»</h4>
+                    <div class="client">
+                        <div class="left title">Цель:</div>
+                        <div class="right">
+                            <div class="row">Актуализация профессии видеоинструментов в HR сфере. Доступно донести информацию о возможностях использования видео в решении HR задач.</div>
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="left title">В рамках проекта проведены следующие работы:</div>
+                        <div class="right">
+                            <div class="row">
+                                Разработан концепт, сценарий, по которому сделаны раскадровка и аниматик, поиск и согласование локаций для съемок. Работа режиссера+оператор+гафер+менеджер проекта, два съемочных дня, видеомонтаж три дня.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="left title">Результат:</div>
+                        <div class="right">
+                            <div class="row">
+                                Демонстрация видео на HR премии 2019г. Ознакомление целевой аудитории о возможностях видеоинструментов. Прикрепив данное видео к КП для HR отдела, конверсия увеличилась на 38%.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next-project">
+                        <span>Следующий проект</span>
+                        <div class="next-button" data-next="0">Имиджевое видео « Lumo»</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section form-section" data-section-name="4">
+            <!-- <img src="img/bg.jpg" alt=""> -->
+            <div class="section-content">
+                <div class="container">
+                    <div class="content">
+                        <div class="left-block wow flipInY">
+                            <img src="img/service_1.jpg" alt="">
+                            <div class="block-overlay">
+                                <h4 class="block-name">Рассчитать проект <span>Продакшн полного цикла</span></h4>
+                                <div class="block-text">Заполните форму и наш менеджер просчитает стоимость Вашего
+                                    проекта, и свяжется с вами в ближайшее время.</div>
+                            </div>
+                        </div>
+                        <div class="right-block">
+                            <form action="">
+                                <div class="service-type">
+                                    <input type="radio" name="1" id="5">
+                                    <label for="5">Создание Ютуб канала</label>
+                                    <input type="radio" name="1" id="4">
+                                    <label for="4">Продающие видео</label>
+                                    <input type="radio" name="1" id="3">
+                                    <label for="3">Видео для HR-отделов</label>
+                                    <input type="radio" name="1" id="2">
+                                    <label for="2">Имиджевое видео</label>
+                                    <input type="radio" name="1" id="1">
+                                    <label for="1">Видео-коммерческое предложение</label>
+                                </div>
+                                <div class="input-block">
+                                    <input type="text" placeholder="Название компании" required>
+                                </div>
+                                <div class="input-block">
+                                    <input type="tel" placeholder="+ 375 (__) ___-__-__" required>
+                                </div>
+                                <div class="input-block">
+                                    <input type="email" placeholder="E-mail" required>
+                                </div>
+                                <textarea name="" id="" placeholder="Сообщение"></textarea>
+                                <input type="file" name="file" id="file">
+                                <label class="file-label" for="file"><span></span> Прикрепить сценарий или техническое
+                                    задание</label>
+                                <button class="button">Рассчитать стоимость</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section partners-section" data-section-name="5">
+            <!-- <img src="img/bg.jpg" alt=""> -->
+            <div class="section-content">
+                <div class="container">
+                    <div class="content">
+                        <div class="content-top">
+                            <h2 class="section-title">с нами <span>работают</span></h2>
+                        </div>
+                        <div class="content-center">
+                            <div class="partners">
+                                <div class="partner wow bounceInLeft" data-wow-delay="0.2s"><img src="img/partner_1.jpg"
+                                        alt=""></div>
+                                <div class="partner wow bounceInLeft" data-wow-delay="0.1s"><img src="img/partner_2.jpg"
+                                        alt=""></div>
+                                <div class="partner wow bounceInLeft"><img src="img/partner_3.jpg" alt=""></div>
+                                <div class="partner wow bounceInRight"><img src="img/partner_4.jpg" alt=""></div>
+                                <div class="partner wow bounceInRight" data-wow-delay="0.1s"><img
+                                        src="img/partner_5.jpg" alt=""></div>
+                                <div class="partner wow bounceInRight" data-wow-delay="0.2s"><img
+                                        src="img/partner_6.jpg" alt=""></div>
+                                <div class="partner wow bounceInUp" data-wow-delay="0.2s"><img src="img/partner_7.jpg"
+                                        alt=""></div>
+                                <div class="partner wow bounceInUp" data-wow-delay="0.1s"><img src="img/partner_8.jpg"
+                                        alt=""></div>
+                                <div class="partner wow bounceInUp"><img src="img/partner_9.jpg" alt=""></div>
+                                <div class="partner wow bounceInUp"><img src="img/partner_10.jpg" alt=""></div>
+                                <div class="partner wow bounceInUp" data-wow-delay="0.1s"><img src="img/partner_11.jpg"
+                                        alt=""></div>
+                                <div class="partner wow bounceInUp" data-wow-delay="0.2s"><img src="img/partner_12.jpg"
+                                        alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section contacts-section" data-section-name="6">
+            <!-- <img src="img/bg.jpg" alt=""> -->
+            <div class="section-content">
+                <div class="container">
+                    <div class="content">
+                        <div class="content-top">
+                            <h2 class="section-title">Контакты</h2>
+                        </div>
+                        <div class="content-center">
+                            <div class="left-block">
+                                <span class="wow bounceInLeft" data-wow-delay="0.2s">Мы </span>
+                                <span class="wow bounceInLeft" data-wow-delay="0.1s">На </span>
+                                <span class="wow bounceInLeft">Связи</span>
+                            </div>
+                            <div class="right-block">
+                                <div class="adres wow bounceInRight" data-wow-delay="0.2s">Минск, проспект Победителей,
+                                    5/20</div>
+                                <div class="mail wow bounceInRight" data-wow-delay="0.1s">martinmedia.minsk@gmail.com
+                                </div>
+                                <div class="tel wow bounceInRight">+375 (29) <b>332 13 56</b></div>
+                                <div class="button wow bounceInUp pop-up-btn-call">Связаться с нами</div>
+                            </div>
+                        </div>
+                        <div class="creator">                        
+                            <span>Разработано компанией </span>
+                            <a href="https://likeit.by/"><img src="img/likeIT.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="aside">
+        <div class="social">
+            <a href="#" class="social-icon">
+                <svg width="24" height="22" viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.77478 12.6752L8.75977 20.1371L12.6458 16.2511L19.3087 21.5469L24 0.453125L0 10.45L5.77478 12.6752ZM17.142 6.50513L9.79596 13.2055L8.88098 16.6539L7.19073 12.4275L17.142 6.50513Z"
+                        fill="#DCDCDC" />
+                </svg>
+            </a>
+            <a href="#" class="social-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.4844 0H3.51562C1.57727 0 0 1.57727 0 3.51562V20.4844C0 22.4227 1.57727 24 3.51562 24H20.4844C22.4227 24 24 22.4227 24 20.4844V3.51562C24 1.57727 22.4227 0 20.4844 0ZM12.0469 18.2812C8.55743 18.2812 5.71875 15.4426 5.71875 11.9531C5.71875 8.46368 8.55743 5.625 12.0469 5.625C15.5363 5.625 18.375 8.46368 18.375 11.9531C18.375 15.4426 15.5363 18.2812 12.0469 18.2812ZM19.0781 7.03125C17.915 7.03125 16.9688 6.08496 16.9688 4.92188C16.9688 3.75879 17.915 2.8125 19.0781 2.8125C20.2412 2.8125 21.1875 3.75879 21.1875 4.92188C21.1875 6.08496 20.2412 7.03125 19.0781 7.03125Z"
+                        fill="#DCDCDC" />
+                </svg>
+            </a>
+            <a href="#" class="social-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M22.4707 0H1.53271C0.685908 0 0 0.685908 0 1.53101V22.469C0 23.3141 0.685908 24 1.53271 24H22.469C23.3141 24 24 23.3141 24 22.469V1.53101C24.0017 0.684214 23.3158 0 22.4707 0ZM19.9083 14.6242C20.3469 15.0713 21.2987 15.8216 21.126 16.5854C20.9668 17.2866 19.9201 17.0308 18.904 17.0715C17.7438 17.1206 17.0562 17.146 16.3585 16.5854C16.0299 16.3195 15.8369 16.0045 15.5218 15.6522C15.2356 15.3339 14.8749 14.7631 14.3837 14.7851C13.5014 14.8292 13.7774 16.0587 13.4641 16.897C8.55945 17.6693 6.5898 14.6395 4.85216 11.6994C4.01044 10.2751 2.79444 7.21643 2.79444 7.21643L6.26293 7.20457C6.26293 7.20457 7.37563 9.22843 7.67031 9.75005C7.92097 10.1938 8.19702 10.546 8.48155 10.9423C8.72034 11.2709 9.09802 11.9145 9.51126 11.862C10.1836 11.7756 10.3056 9.16745 9.88893 8.29356C9.72296 7.9396 9.32496 7.81596 8.91341 7.69572C9.05229 6.81843 12.8036 6.63552 13.4099 7.31635C14.2906 8.30541 12.8002 11.0592 14.0061 11.862C15.6997 10.9745 17.146 7.25877 17.146 7.25877L21.2073 7.28417C21.2073 7.28417 20.5722 9.29278 19.9066 10.1836C19.5187 10.7052 18.2316 11.8671 18.2824 12.7291C18.3231 13.4116 19.3697 14.0755 19.9083 14.6242Z"
+                        fill="#DCDCDC" />
+                </svg>
+            </a>
+            <a href="#" class="social-icon fb">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.4844 0H3.51562C1.57727 0 0 1.57727 0 3.51562V20.4844C0 22.4227 1.57727 24 3.51562 24H10.5938V15.5156H7.78125V11.2969H10.5938V8.4375C10.5938 6.11115 12.4861 4.21875 14.8125 4.21875H19.0781V8.4375H14.8125V11.2969H19.0781L18.375 15.5156H14.8125V24H20.4844C22.4227 24 24 22.4227 24 20.4844V3.51562C24 1.57727 22.4227 0 20.4844 0Z"
+                        fill="#DCDCDC" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="policy">www.mmedia.by © 2018 Все права защищены</div>
+            <div class="footer-tel tel">+375 (29) <b>332 13 56</b></div>
+        </div>
+    </footer>  
+    <div class="pop-up-overlay hide" onclick="$('.pop-up-overlay').addClass('hide');$('.pop-up').addClass('hide');"></div>
+    <div class="pop-up pop-up-consult hide">
+        <div class="close-pop-up" onclick="$('.pop-up-overlay').addClass('hide');$('.pop-up-consult').addClass('hide');$('.pop-up-consult').animate({opacity:'0',top:'-50%'},800);">+</div>
+        <div class="form-title">
+            Заказать 
+            <br>
+            <span class="pop-up-name">Название услуги</span>
+        </div>
+        <p class="subtitle">Оставьте свои контакты и наш менеджер свяжется с Вами в ближайшее время</p>
+        <form action="">
+            
+            <!-- <div class="service-type">
+                <input type="radio" name="pop1" id="pop5">
+                <label for="pop5">Создание Ютуб канала</label>
+                <input type="radio" name="pop1" id="pop4">
+                <label for="pop4">Продающие видео</label>
+                <input type="radio" name="pop1" id="pop3">
+                <label for="pop3">Видео для HR-отделов</label>
+                <input type="radio" name="pop1" id="pop2">
+                <label for="pop2">Имиджевое видео</label>
+                <input type="radio" name="pop1" id="pop1">
+                <label for="pop1">Видео-коммерческое предложение</label>
+            </div> -->
+            <div class="input-block">
+                <input type="text" placeholder="Ваше имя" required>
+            </div>
+            <div class="input-block">
+                <input type="tel" placeholder="+ 375 (__) ___-__-__" required>
+            </div>
+            <button class="button">Заказать консультацию</button>
+        </form>
+    </div>
+    <div class=" pop-up pop-up-call hide">
+        <div class="close-pop-up" onclick="$('.pop-up-overlay').addClass('hide');$('.pop-up-call').addClass('hide');$('.pop-up-call').animate({opacity:'0',top:'-50%'},800);">+</div>
+        <div class="form-title">
+            Заказать 
+            <br>
+            <span>Звонок</span>
+        </div>
+        <p class="subtitle">Оставьте свои контакты и наш менеджер свяжется с Вами в ближайшее время</p>
+        <form action="">
+            <div class="input-block">
+                <input type="text" placeholder="Ваше имя" required>
+            </div>
+            <div class="input-block">
+                <input type="tel" placeholder="+ 375 (__) ___-__-__" required>
+            </div>
+            <button class="button">Заказать</button>
+        </form>
+    </div>
+    <div class=" pop-up pop-up-showreal hide">
+        <div class="pop-video-container" style="width: 100%;height: 100%;">
+            <video autobuffer preload="auto" class="pop-up-video" width="100%" height="100%">
+                <source src="https://www.youtube.com/watch?v=8qutvFpBRt4" type="video/youtube">
+            </video>
+            <div class="video-nav video-back showreal-close" onclick="$('.pop-up-overlay').addClass('hide');$('.pop-up-showreal').addClass('hide');$('.pop-up-showreal').animate({opacity:'0',top:'-50%'},800);"><span>Назад</span></div>
+        </div>
+    </div>
+    <script>
+        Pace.on('hide', function(){
+            $('header').css({opacity:'1'});
+            $('main').css({opacity:'1'});
+            $('.blocks-overlay').css({opacity:'1'});
+            $('.aside').css({opacity:'1'});
+            $('.pagination').css({opacity:'1'});
+        });
+    </script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/scrollify/jquery.scrollify.js"></script>
+    <script src="assets/js/wow/wow.min.js"></script>
+    <script src="assets/build/mediaelement-and-player.min.js"></script>
+    <script src="assets/slick/slick.min.js"></script>
+    <script src="assets/js/preloader.js"></script>
+    <script src="main.js"></script>
+    <script>
+        $(function () {
+            $.scrollify({
+                section: ".section",
+                interstitialSection: "section-name",
+                easing: "easeOutExpo",
+                scrollSpeed: 1100,
+                offset: 0,
+                scrollbars: false,
+                standardScrollElements: "",
+                setHeights: true,
+                overflowScroll: true,
+                updateHash: true,
+                touchScroll: true,
+                before: function (i, panels) {
+                    var ref = panels[i].attr("data-section-name");
+                    $(".pagination .active").removeClass("active");
+                    $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
+                },
+                afterRender: function () {
+                    var pagination = "<ul class=\"pagination\">";
+                    var activeClass = "";
+                    $(".section").each(function (i) {
+                        activeClass = "";
+                        if (i === $.scrollify.currentIndex()) {
+                            activeClass = "active";
+                        }
+                        pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"></a></li>";
+                    });
+
+                    pagination += "</ul>";
+
+                    $("body").append(pagination);
+
+                    $(".pagination a").on("click", $.scrollify.move);
+                }
+            });
+        });
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

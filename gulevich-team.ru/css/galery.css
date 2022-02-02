@@ -1,0 +1,233 @@
+.main__header__galery {
+	width: 100%;
+	background-color: #fff;
+}
+
+.title {
+	margin: 25px auto 40px auto;
+}
+
+.first__section__container__galery {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin-top: 100px;
+} 
+
+.photo__galery {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.photo {
+	width: 32%;
+	height: 300px;
+	display: block;
+	background-color: #e2e2e2;
+	margin-bottom: 15px;
+	background-image: url(../img/3.jpg);
+	background-position: 0 0;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.photo:nth-child(2) {
+	background-image: url(../img/4.jpg);
+}
+
+.photo:nth-child(3) {
+	background-image: url(../img/6.jpg);
+}
+
+.photo__galery img:nth-child(4) {
+	background-image: url(../img/12.jpg);
+}
+
+.photo__galery img:nth-child(5) {
+	background-image: url(../img/14.jpg);
+}
+
+.photo__galery img:nth-child(6) {
+	background-image: url(../img/15.jpg);
+}
+
+.photo__galery img:nth-child(7) {
+	background-image: url(../img/16.jpg);
+}
+
+.photo__galery img:nth-child(8) {
+	background-image: url(../img/17.jpg);
+}
+
+.photo__galery img:nth-child(9) {
+	background-image: url(../img/18.jpg);
+}
+
+.photo__galery img:nth-child(10) {
+	background-image: url(../img/19.jpg);
+}
+
+.photo__galery img:nth-child(11) {
+	background-image: url(../img/24.jpg);
+}
+
+.photo__galery img:nth-child(12) {
+	background-image: url(../img/25.jpg);
+}
+
+.photo__galery img:nth-child(13) {
+	background-image: url(../img/26.jpg);
+}
+
+.photo__galery img:nth-child(14) {
+	background-image: url(../img/27.jpg);
+}
+
+.photo__galery img:nth-child(15) {
+	background-image: url(../img/28.jpg);
+}
+
+.photo__galery img:nth-child(16) {
+	background-image: url(../img/30.jpg)}
+
+.photo__galery img:nth-child(17) {
+	background-image: url(../img/32.jpg);
+}
+
+.photo__galery img:nth-child(18) {
+	background-image: url(../img/35.jpg);
+}
+
+.photo__galery img:nth-child(19) {
+	background-image: url(../img/37.jpg);
+}
+
+.photo__galery img:nth-child(20) {
+	background-image: url(../img/newImg_1.jpeg);
+}
+
+.photo__galery img:nth-child(21) {
+	background-image: url(../img/newImg_2.jpeg);
+}
+
+.photo__galery img:nth-child(22) {
+	background-image: url(../img/newImg_3.jpeg);
+}
+
+.photo__galery img:nth-child(23) {
+	background-image: url(../img/newImg_4.jpeg);
+}
+
+.photo__galery img:nth-child(24) {
+	background-image: url(../img/newImg_5.jpeg);
+}
+
+.photo__galery img:nth-child(25) {
+	background-image: url(../img/newImg_6.jpeg);
+}
+
+.photo__galery img:nth-child(26) {
+	background-image: url(../img/newImg_7.jpeg);
+}
+
+.photo__galery img:nth-child(27) {
+	background-image: url(../img/newImg_8.jpeg);
+}
+
+.photo__galery img:nth-child(28) {
+	background-image: url(../img/newImg_9.jpeg);
+}
+
+.photo__galery img:nth-child(29) {
+	background-image: url(../img/newImg_10.jpeg);
+}
+
+.photo__galery img:nth-child(30) {
+	background-image: url(../img/newImg_11.jpeg);
+}
+
+.photo__galery img:nth-child(31) {
+	background-image: url(../img/newImg_12.jpeg);
+}
+
+.photo__galery img:nth-child(32) {
+	background-image: url(../img/newImg_13.jpeg);
+}
+
+.photo__galery img:nth-child(33) {
+	background-image: url(../img/33.jpg);
+}
+
+
+
+.gallery__overflow {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(000, 000, 000, 0.8);
+	z-index: 0;
+}
+
+.gallery__container {
+	display: none;
+}
+
+.gallery__img {
+	background-color: #f2f2f2;
+	height: 85vh;
+    width: 80%;
+    left: 10%;
+    top: 10%;
+    position: fixed;
+	z-index: 10;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+
+.left, .right {
+	display: block;
+	position: fixed;
+	width: 10%;
+	height: 85vh;
+	background-color: rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+	z-index: 10;
+	background-image: url(../img/icons/Vector1.svg);
+	background-position: center;
+	background-size: 50%;
+	background-repeat: no-repeat;
+	top: 10%;
+}
+
+.left {
+	left: 0;
+	transform: rotate(180deg);
+}
+
+.right {
+	right: 0;
+}
+
+.right:hover,
+.left:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+	z-index: 1000;
+}
+
+.hidden {
+	display: none;
+}
+
+@media (max-width: 810px) {
+	.photo {
+		height: 30vh;
+	}
+}

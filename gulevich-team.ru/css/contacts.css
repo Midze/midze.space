@@ -1,0 +1,57 @@
+.main__header__contacts {
+	width: 100%;
+	background: none;
+	min-height: auto;
+	height: auto;
+}
+
+.first__section__contacts {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 100px;
+}
+
+.contacts {
+	width: 100%;
+	padding: 0 15px 25px 15px;
+	text-align: left;
+	background-color: #fff;
+	margin-top: 25px;
+}
+
+.contacts h1 {
+	font-size: 3.5rem;
+    line-height: 3.5rem;
+    font-weight: bold;
+    padding: 20px 0 20px 0;
+}
+
+.contacts p {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+
+.contacts p a {
+	color: #000;
+    font-size: 3rem;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+
+.contacts p a:hover {
+	color: #000000;	
+}
+
+.contacts span {
+	color: #000;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.third__section__contacts {
+	margin-bottom: 40px;
+	padding: 0 5px;
+}
