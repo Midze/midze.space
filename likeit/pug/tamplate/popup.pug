@@ -1,0 +1,102 @@
+.popupWrapper
+  .mainMenu.tripleContainer
+    .asideLeft
+    .mainMenu__container.tripleContainer__center
+      .mainMenu__header
+        .mainMenu__title Likeit
+        .mainMenu__language.langSwitch
+          .langSwitch__item.langSwitch__item_active.langSwitch__item_ru.langSwitch__item_white Ru
+          .langSwitch__item.langSwitch__item_en.langSwitch__item_white En
+        .mainMenu__close.menuAnimatedButton
+          .menuAnimatedButton__menuLine.menuAnimatedButton__menuLine_top
+          .menuAnimatedButton__menuLine.menuAnimatedButton__menuLine_middle
+          .menuAnimatedButton__menuLine.menuAnimatedButton__menuLine_bottom
+          //svg.svgClose
+            //use(href='#close')
+      .mainMenu__content
+        .mainMenu__list.mainMenu__list_mobile
+          .mainMenu__item
+            .mainMenu__label.mainMenu__label_tab О компании
+            ul.mainMenu__subList.js-tabContent
+              li.mainMenu__subItem: a(href='#') О компании
+              li.mainMenu__subItem: a(href='#') Партнеры
+              li.mainMenu__subItem: a(href='#') Отзывы
+              li.mainMenu__subItem: a(href='#') Вакансии
+          .mainMenu__item
+            .mainMenu__label.mainMenu__label_tab Наши услуги
+            ul.mainMenu__subList.js-tabContent
+              li.mainMenu__subItem: a(href='#') Разработка web&mobile
+              li.mainMenu__subItem: a(href='#') UX/Ui дизайн
+              li.mainMenu__subItem: a(href='#') Digital-маркетинг
+              li.mainMenu__subItem: a(href='#') CRM автоматизация
+          .mainMenu__item
+            .mainMenu__label.mainMenu__label_tab Кейсы
+            ul.mainMenu__subList.js-tabContent
+              li.mainMenu__subItem: a(href='#') UX/UI дизайн
+              li.mainMenu__subItem: a(href='#') Landing pages
+              li.mainMenu__subItem: a(href='#') Интернет-магазины
+              li.mainMenu__subItem: a(href='#') Корпоративные сайты
+              li.mainMenu__subItem: a(href='#') Внедрение CRM
+              li.mainMenu__subItem: a(href='#') SEO продвижение
+              li.mainMenu__subItem: a(href='#') Контекстная реклама
+          .mainMenu__item
+            .mainMenu__label: a(href='#') Блог
+          .mainMenu__item
+            .mainMenu__label.mainMenu__label_tab Продукты
+            ul.mainMenu__subList.js-tabContent
+              li.mainMenu__subItem: a(href='#') 1С-Битрикс: Управление сайтом
+              li.mainMenu__subItem: a(href='#') CRM системы
+          .mainMenu__item
+            .mainMenu__label: a(href='#') Контакты
+        .mainMenu__list.mainMenu__list_desktop
+          .mainMenu__column
+            .mainMenu__item
+              .mainMenu__label О компании
+              ul.mainMenu__subList
+                li.mainMenu__subItem: a(href='#') О компании
+                li.mainMenu__subItem: a(href='#') Партнеры
+                li.mainMenu__subItem: a(href='#') Отзывы
+                li.mainMenu__subItem: a(href='#') Вакансии
+            .mainMenu__item
+              .mainMenu__label Продукты
+              ul.mainMenu__subList
+                li.mainMenu__subItem: a(href='#') 1С-Битрикс: Управление сайтом
+                li.mainMenu__subItem: a(href='#') CRM системы
+          .mainMenu__column
+            .mainMenu__item
+              .mainMenu__label Наши услуги
+              ul.mainMenu__subList
+                li.mainMenu__subItem: a(href='#') Разработка web&mobile
+                li.mainMenu__subItem: a(href='#') UX/Ui дизайн
+                li.mainMenu__subItem: a(href='#') Digital-маркетинг
+                li.mainMenu__subItem: a(href='#') CRM автоматизация
+          .mainMenu__column
+            .mainMenu__item
+              .mainMenu__label Кейсы
+              ul.mainMenu__subList
+                li.mainMenu__subItem: a(href='#') UX/UI дизайн
+                li.mainMenu__subItem: a(href='#') Landing pages
+                li.mainMenu__subItem: a(href='#') Интернет-магазины
+                li.mainMenu__subItem: a(href='#') Корпоративные сайты
+                li.mainMenu__subItem: a(href='#') Внедрение CRM
+                li.mainMenu__subItem: a(href='#') SEO продвижение
+                li.mainMenu__subItem: a(href='#') Контекстная реклама
+          .mainMenu__column
+            .mainMenu__item
+              .mainMenu__label: a(href='#') Блог
+            .mainMenu__item
+              .mainMenu__label: a(href='#') Контакты
+              ul.mainMenu__subList
+                li.mainMenu__subItem.mainMenu__subItem_big.mainMenu__subItem_thin +375 (29) 322-00-20
+                li.mainMenu__subItem.mainMenu__subItem_thin info@likeit.by
+                li.mainMenu__subItem.mainMenu__subItem_thin Минск, ул. Казинца 11а, Барановичи, ул. Куйбышева,111 офис 211
+
+        .mainMenu__positioned
+          a.mainMenu__link.mainLink.mainLink_white(href='#') Рассчитать проект
+          ul.asideMenu.asideMenu_common
+            li.asideMenu__item.asideMenu__item_common: a(href='#') Behance
+            li.asideMenu__item.asideMenu__item_common: a(href='#') Facebook
+            li.asideMenu__item.asideMenu__item_common: a(href='#') Instagram
+    .asideRight
+  .popupVideo
+    include ../tamplate/preload

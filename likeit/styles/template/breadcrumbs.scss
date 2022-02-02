@@ -1,0 +1,46 @@
+.breadcrumbs {
+  margin-top: 45px;
+  margin-bottom: 25px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    @include mq(545px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    font-size: 18px;
+    line-height: 21px;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+
+      &::before {
+        position: absolute;
+        content: '|';
+        right: -19.5px;
+        top: 0;
+
+        display: block;
+
+        font-size: 18px;
+        line-height: 21px;
+
+        color: #000;
+      }
+    }
+
+    &:first-child {
+      color: #B7B7B7;
+
+      &::before {
+        color: #B7B7B7;;
+      }
+    }
+  }
+}

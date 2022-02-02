@@ -1,0 +1,272 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title LikeIt
+    link(rel='stylesheet', type='text/css', href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css')
+    link(rel='stylesheet', href='css/nouislider.min.css')
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='css/serviceItem.css')
+  body
+    include tamplate/popup
+    include ../sprite/main.svg
+    .pageWrapper
+      header.header.tripleContainer
+        .asideLeft.asideLeft_auto
+          ul.asideMenu
+            li.asideMenu__item: a(href='#') Behance
+            li.asideMenu__item: a(href='#') Facebook
+            li.asideMenu__item: a(href='#') Instagram
+        .header__container.tripleContainer__center
+          include tamplate/headerTop
+          .serviceItem
+            .breadcrumbs
+              ul.breadcrumbs__list
+                li.breadcrumbs__item: a(href='#') Главная
+                li.breadcrumbs__item: a(href='#') Услуги
+                li.breadcrumbs__item: a(href='#') Интернет-агенство Лайкит
+                li.breadcrumbs__item: a(href='#') Разработка web&mobile
+            .serviceItem__title.pageTitle.pageTitle_noNumber
+              h2.pageTitle__text Разработка интернет-магазина
+            .serviceItem__text Уникальные интернет-магазины с адаптивным дизайном и инструментами для повышения продаж. Разрабатываем интернет-магазины с конверсией в покупки до 40%.
+            .serviceItem__container
+              .serviceItem__aside
+                ul.serviceItem__list
+                  li.serviceItem__item.active
+                    .serviceItem__itemLabel Разработка web&mobile
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') Создание интернет-магазина
+                      li.serviceItem__subitem: a(href='#') Корпоративные сайты
+                      li.serviceItem__subitem: a(href='#') Landing pages
+                      li.serviceItem__subitem: a(href='#') Техническая поддержка
+                      li.serviceItem__subitem: a(href='#') Мобильное приложение
+                      li.serviceItem__subitem: a(href='#') Уникальный проект
+                  li.serviceItem__item
+                    .serviceItem__itemLabel UX/UI  дизайн
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') UX/UI дизайн
+                      li.serviceItem__subitem: a(href='#') Фирменный стиль
+                      li.serviceItem__subitem: a(href='#') Создание имиджевой графики
+                      li.serviceItem__subitem: a(href='#') Дизайн
+                      li.serviceItem__subitem: a(href='#') Разработка логотипа
+                      li.serviceItem__subitem: a(href='#') Упаковка бизнеса под ключ
+                  li.serviceItem__item
+                    .serviceItem__itemLabel Digital-маркетинг
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') Маркетинговая стратегия
+                      li.serviceItem__subitem: a(href='#') SEO продвижение
+                      li.serviceItem__subitem: a(href='#') Social Media Marketing
+                      li.serviceItem__subitem: a(href='#') Контекстная реклама
+                      li.serviceItem__subitem: a(href='#') Таргетированная реклама
+                      li.serviceItem__subitem: a(href='#') Квиз-маркетинг
+                  li.serviceItem__item
+                    .serviceItem__itemLabel CRM автоматизация
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') Внедрение KPI
+                      li.serviceItem__subitem: a(href='#') Интеграция телефонии
+                      li.serviceItem__subitem: a(href='#') Автоматизация бизнес-процессов
+                      li.serviceItem__subitem: a(href='#') Обмен с 1С
+                      li.serviceItem__subitem: a(href='#') Внедрение CRM
+                .serviceItem__consult
+                  .serviceItem__consultText Нужна консультация или готовы начать проект?
+                  a.serviceItem__consultButton(href='#') Получить консультацию
+              .serviceItem__block
+                .serviceItem__doubleImage
+                  img(src='img/doublePayment.png', alt)
+                .serviceItem__orderWrapper
+                  .serviceItem__paragraph Создание эффективно продающего интернет-магазина – достаточно трудоемкий процесс, требующий внимания целой команды квалифицированных специалистов.
+                  .serviceItem__orderLink.mainLink(href='#') Заказать услугу
+                h3.serviceItem__subtitle Создание интернет-магазина под ключ
+                .serviceItem__paragraph.serviceItem__paragraph_withLike
+                  | По статистике 35-40% всех покупок совершаются онлайн. Если вы задумались над созданием интернет-магазина, не стоит пытаться сэкономить на специалистах и качестве. Ваша торговая площадка должна быть продумана до мелочей.
+                  br
+                  | Мы разрабатываем не просто площадку с товарами, а инструмент, который увеличивает конверсию Ваших продаж в разы.
+                h3.serviceItem__subtitle Что входит в разработку?
+                .serviceItem__paragraph.serviceItem__paragraph_topClose Делаем весь необходимый комплекс мероприятий и этапов, которые помогут Вашему интернет-магазину сразу работать эффективно.
+                ul.serviceItem__includsList
+                  li.serviceItem__includesItem
+                    .serviceItem__includesImage
+                      svg.serviceItem__svgImage
+                        use(href='#computer-graphic')
+                    .serviceItem__includesContent
+                      .serviceItem__includesLabel Индивидуальный дизайн
+                      .serviceItem__includesText Наша команда прекрасно понимает всю важность элементов и блоков интернет-магазина. Дизайн должен не только располагать к себе, но и быть удобным и понятным покупателю. Прототипируем и прорабатываем все сценарии действий пользователей для максимальной эффективности.
+                  li.serviceItem__includesItem
+                    .serviceItem__includesImage
+                      svg.serviceItem__svgImage
+                        use(href='#cloud-computing2')
+                    .serviceItem__includesContent
+                      .serviceItem__includesLabel Надежный хостинг
+                      .serviceItem__includesText Разумеется, мы готовы разместить созданный интернет-магазин на любой площадке, предложенной клиентом, но в то же время у нас есть собственные проверенные варианты, подходящие под цели вашего бизнеса.
+                  li.serviceItem__includesItem
+                    .serviceItem__includesImage
+                      svg.serviceItem__svgImage
+                        use(href='#computer')
+                    .serviceItem__includesContent
+                      .serviceItem__includesLabel Полную адаптивность
+                      .serviceItem__includesText Не нужно подстраивать страницу под конкретный девайс, ведь сайты, разработанные нашей командой, выглядят одинаково впечатляюще и на мобильных, и на десктопных устройствах.
+                  li.serviceItem__includesItem
+                    .serviceItem__includesImage
+                      svg.serviceItem__svgImage
+                        use(href='#diagram')
+                    .serviceItem__includesContent
+                      .serviceItem__includesLabel Оптимизация для дальнейшего продвижения
+                      .serviceItem__includesText Мы сразу делаем весь необходимый комплекс мероприятий для первичной оптимизации сайта.
+                  li.serviceItem__includesItem
+                    .serviceItem__includesImage
+                      svg.serviceItem__svgImage
+                        use(href='#promotion')
+                    .serviceItem__includesContent
+                      .serviceItem__includesLabel Маркетинговая составляющая
+                      .serviceItem__includesText Опираемся на вашу целевую аудиторию для максимального попадания в цель. Задействуем маркетинговые фишки и креативы для убеждения покупателей. Составляем стратегию для продвижения магазина.
+                  li.serviceItem__includesItem
+                    .serviceItem__includesImage
+                      svg.serviceItem__svgImage
+                        use(href='#support')
+                    .serviceItem__includesContent
+                      .serviceItem__includesLabel Техническая поддержка
+                      .serviceItem__includesText Консультируем по любым вопросам, связанным с функционалом интернет-магазина, своевременно исправляем неполадки и трудности эксплуатации.
+                .serviceItem__questions
+                  .serviceItem__questionsImage
+                    img(src="img/questionsImage.png", alt)
+                  .serviceItem__questionsContent
+                    .serviceItem__questionsLabel У вас есть вопросы?
+                    .serviceItem__questionsText Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и с удовольствием проконсультируем!
+                  button.serviceItem__questionsButton Получить консультацию сейчас
+                .serviceItem__orderWrapper
+                  .serviceItem__innerTitle.pageTitle.pageTitle_noNumber
+                    h3.pageTitle__text Портфолио
+                  .serviceItem__orderLink.mainLink(href='#') Смотреть все кейсы
+                .cases__slider.cases__slider_inner
+                  .cases__item
+                    .cases__imageWrapper
+                      img.cases__image(src="img/caseImg.jpg", alt)
+                    .cases__overlay
+                    .cases__content
+                      .cases__title Aminohome.by
+                      .cases__label Интернет магазин
+                      .cases__text Современная дизайн мебельного ритейлера – баланс красоты и комфорта.
+                      a.cases__more.mainLink(href='#') Подробнее
+                  .cases__item
+                    .cases__imageWrapper
+                      img.cases__image(src="img/caseImg.jpg", alt)
+                    .cases__overlay
+                    .cases__content
+                      .cases__title Aminohome.by
+                      .cases__label Интернет магазин
+                      .cases__text Современная дизайн мебельного ритейлера – баланс красоты и комфорта.
+                      a.cases__more.mainLink(href='#') Подробнее
+                  .cases__item
+                    .cases__imageWrapper
+                      img.cases__image(src="img/caseImg.jpg", alt)
+                    .cases__overlay
+                    .cases__content
+                      .cases__title Aminohome.by
+                      .cases__label Интернет магазин
+                      .cases__text Современная дизайн мебельного ритейлера – баланс красоты и комфорта.
+                      a.cases__more.mainLink(href='#') Подробнее
+                  .cases__item
+                    .cases__imageWrapper
+                      img.cases__image(src="img/caseImg.jpg", alt)
+                    .cases__overlay
+                    .cases__content
+                      .cases__title Aminohome.by
+                      .cases__label Интернет магазин
+                      .cases__text Современная дизайн мебельного ритейлера – баланс красоты и комфорта.
+                      a.cases__more.mainLink(href='#') Подробнее
+                  .cases__item
+                    .cases__imageWrapper
+                      img.cases__image(src="img/caseImg.jpg", alt)
+                    .cases__overlay
+                    .cases__content
+                      .cases__title Aminohome.by
+                      .cases__label Интернет магазин
+                      .cases__text Современная дизайн мебельного ритейлера – баланс красоты и комфорта.
+                      a.cases__more.mainLink(href='#') Подробнее
+                  .cases__item
+                    .cases__imageWrapper
+                      img.cases__image(src="img/caseImg.jpg", alt)
+                    .cases__overlay
+                    .cases__content
+                      .cases__title Aminohome.by
+                      .cases__label Интернет магазин
+                      .cases__text Современная дизайн мебельного ритейлера – баланс красоты и комфорта.
+                      a.cases__more.mainLink(href='#') Подробнее
+                h3.serviceItem__subtitle Что мы используем?
+                .serviceItem__paragraph.serviceItem__paragraph_topClose Реализовать простейший интернет-магазин можно, не прибегая к использованию современных CMS, но результат едва ли удовлетворит даже самого нетребовательного пользователя.
+                .cms__list
+                  .cms__item
+                    img(src='img/bitrix-logo.png', alt)
+                  .cms__item
+                    img(src='img/modx.png', alt)
+                  .cms__item
+                    img(src='img/magento.png', alt)
+                  .cms__item
+                    img(src='img/opencart.png', alt)
+                  .cms__item
+                    img(src='img/drupal.png', alt)
+                  .cms__item
+                    img(src='img/wordpress-logo-hoz-rgb.png', alt)
+                .download
+                  .download__image
+                    img(src='img/starGreen.png', alt)
+                  .download__text
+                    | Какую платформу выбрать для разработки интернет-магазина?
+                    br
+                    | Скачайте чек-лист и возьмите честный обзор на возможности каждой CMS.
+                  .download__button Скачать бесплатно
+                .serviceItem__text.serviceItem__text_withLink
+                  | Теперь, когда Вы выбрали платформу, нужно определиться- нужна ли интеграция с 1С. Об этом можно подробно прочитать &nbsp;
+                  a(href='#') здесь
+                .innerList__container
+                  .innerList__label На какие этапы разбиваем Ваш проект?
+                  ul.innerList__list
+                    li.innerList__item Изучение ниши, анализы конкурентов и ваших потребностей, разработка технического задания;
+                    li.innerList__item Разработка прототипов и стратегии получения клиентов для интернет-магазина;
+                    li.innerList__item Создание дизайна;
+                    li.innerList__item Вёрстка всех страниц и интеграция с системами управления и оплаты;
+                    li.innerList__item Тестирование работоспособности всех элементов и заполнение магазина;
+                    li.innerList__item Запуск магазина и продвижения;
+                .serviceItem__text.serviceItem__text_noMargin Мы хорошо знаем, что нет ничего более опасного, чем поверхностные знания, поэтому предпочитаем в полной мере задействовать потенциал нашей команды, привлекая узкоспециализированных специалистов с большим опытом работы во вверенной им области.
+                .serviceItem__text.serviceItem__text_noMargin Поэтому над вашим проектом будет работать целая команда с дизайнером, SEO-специалистом, маркетологом, верстальщиком и разработчиками, копирайтером, PPC-специалистом, интернет-магазин будет продавать сразу после запуска.
+                h3.pageTitle__text Почему нам доверяют клиенты?
+                .serviceItem__text.serviceItem__text_noMargin За 7 лет работы мы разработали больше 200 успешных проектов, которые продолжают эффективно работать до сих пор. Познакомиться с нашей командой ближе можно на странице О компании, прочитать отзывы о выполненных проектах можно здесь.
+                .propose
+                  .propose__text
+                    span Каждый созданный нами сайт
+                    | &nbsp;– это еще один повод для гордости, а также довольный клиент, с которым мы будем выстраиать доверительные и долгие отношения.
+                  button.propose__button Хочу получить коммерческое предложение
+                .serviceItem__text.serviceItem__text_noMargin.serviceItem__text_withLink
+                  | Чтобы использовать весь функционал интернет-магазина и получать много постоянных клиентов, необходимо качественное продвижение. Мы предлагаем разработку стратегии продвижения с наиболее востребованными каналами. Выбор подходящих каналов&nbsp;
+                  a(href="#") digital-маркетинга
+                  | &nbsp;происходит после исследований и изучения тонкостей ниши, конкурентов. Стратегия определятся как идеальное соотношение максимального охвата качественного трафика/бюджет.
+                .saling
+                  .saling__image
+                    img(src="img/salingImage.png", alt)
+                  .saling__content
+                    .saling__label КАК ИСПОЛЬЗОВАТЬ ЛЕТО НА МАКСИМУМ?
+                    .saling__text
+                      | Заказать интернет-магазин и получить настройку рекламных кампананий на самые&nbsp;
+                      span ГОРЯЧИЕ
+                      | &nbsp;запросы&nbsp;
+                      span в подарок!
+                  .saling__date
+                    | до&nbsp;
+                    span 30
+                    br
+                    | августа
+                .propose.propose_unstyled
+                  .propose__text Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы.
+                  button.propose__button Заказать интернет-магазин
+        .asideRight.asideRight_auto
+          .asideCopy © 2013-2019 LIKEIT / web-engineering co
+      include tamplate/calc
+      include tamplate/footer
+      .redLine
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+    script(type='text/javascript', src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+    script(src='js/jquery.paroller.min.js')
+    script(src='js/nouislider.min.js')
+    script(src='js/main.js')

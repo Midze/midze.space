@@ -1,0 +1,291 @@
+.header__image {
+  position: absolute;
+  transform: translate(0);
+
+  opacity: 1;
+
+  transition: 1s ease .5s;
+
+  @include mq(900px) {
+    display: none;
+  }
+
+  &.js-animated {
+    animation-duration: .6s;
+    animation-timing-function: ease;
+  }
+
+  &.js-unload {
+    opacity: 0;
+
+    transition: transform 2.5s ease .5s;
+  }
+
+  &_bgLeft {
+    left: -130px;
+    top: -90px;
+
+    width: 293.28px;
+    height: 312.61px;
+  }
+
+  &_bgRight {
+    right: -150px;
+    top: 10px;
+  }
+
+  &_small {
+    top: 115px;
+    left: 62.80%;
+
+    width: 104.2px;
+    height: 165.55px;
+
+    &.js-animated {
+      animation-name: shardMoving1;
+    }
+
+    &.js-unload {
+      transform: translateY(-240%);
+    }
+
+    img {
+      transform: matrix(-0.93, -0.36, -0.36, 0.93, 0, 0);
+    }
+  }
+
+  &_big {
+    left: 85.04%;
+    bottom: 239px;
+
+    &.js-animated {
+      animation-name: shardMoving2;
+    }
+
+    &.js-unload {
+      transform: translateX(240%);
+    }
+  }
+
+  &_blur {
+    left: 60.64%;
+    bottom: 95px;
+
+    @include mq(1440px) {
+
+
+      width: 165px;
+      height: 167px;
+    }
+
+    &.js-animated {
+      animation-name: shardMoving3;
+    }
+
+    &.js-unload {
+      transform: translateX(-240%);
+    }
+  }
+}
+
+@keyframes shardMoving1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-45%, -35%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes shardMoving2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(45%, 32%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes shardMoving3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-45%, 32%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.header__scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 17px;
+  transform: translateX(-50%);
+
+  width: 30px;
+  height: 50.53px;
+  padding: 3.95px 3px;
+
+  background: $mainRed;
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  @include mq(900px) {
+    bottom: 10px;
+    transform: translateX(-50%) scale(0.7);
+  }
+
+  @include mq(340px) {
+    left: 60%;
+  }
+}
+
+.header__scrollCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 23.28px;
+
+  background: #fff;
+  border-radius: 50%;
+
+  animation-name: scrollCircle;
+  animation-duration: .8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+  .svgScroll {
+    width: 8px;
+    height: 5px;
+
+    fill: #000;
+  }
+}
+
+@keyframes scrollCircle {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(75%);
+  }
+}
+
+.header__slider {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 1648px;
+  padding: 0 15px;
+
+  @include mq(1024px) {
+    padding: 0;
+  }
+}
+
+.mainSlider {
+  overflow: hidden;
+  flex-grow: 1;
+  margin-top: 160px;
+
+  opacity: 1;
+
+  transition: .5s ease;
+
+  @include mq(900px) {
+    margin-top: 85px;
+  }
+
+  @include mq(479px) {
+    margin-top: 30px;
+  }
+
+  &.js-unload {
+    opacity: 0;
+
+    transition: .5s ease;
+    .mainSlider__item:not(:first-child) {
+      display: none;
+    }
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 935px;
+    transform: translateX(0);
+
+    transition: .2s linear;
+
+    @include mq(900px) {
+      flex-grow: 1;
+      max-width: none;
+    }
+
+    &.js-removed {
+      transform: translateX(-100%);
+
+      transition: .2s linear;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-size: 48px;
+    line-height: 61px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    @include mq(1440px) {
+      font-size: 36px;
+      line-height: 46px;
+    }
+
+    @include mq(900px) {
+      margin-bottom: 50px;
+    }
+
+    @include mq(479px) {
+      font-size: 24px;
+      line-height: 1.5;
+    }
+  }
+
+  &__image {
+    max-width: 437px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include mq(900px) {
+      display: none;
+    }
+  }
+
+  &__more {
+    margin-top: 70px;
+
+    @include mq(900px) {
+      margin-top: 45px;
+      margin-bottom: 75px;
+    }
+  }
+}
+
+.header__elements {
+
+}

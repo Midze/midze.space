@@ -1,0 +1,29 @@
+.langSwitch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 68px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+
+    font-size: 12px;
+
+    border-radius: 50%;
+    cursor: pointer;
+
+    &_active {
+      border: 1px solid $lightGray;
+
+      color: $lightGray;
+    }
+
+    &_white {
+      color: #fff;
+    }
+  }
+}

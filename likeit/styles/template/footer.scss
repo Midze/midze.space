@@ -1,0 +1,104 @@
+.footer {
+  background-image: url('../img/shard_2.png'), url('../img/shard_2.png');
+  background-repeat: no-repeat;
+  background-position: -180px 130px, right -130px top 113px;
+  background-size: 293.28px 312.61px;
+
+  @include mq(900px) {
+    height: auto;
+
+    background-image: none;
+  }
+
+  &__container {
+    padding: 70px 0;
+
+    @include mq(1024px) {
+      padding: 37px;
+    }
+
+    @include mq(580px) {
+      padding-top: 37px !important;
+      padding-bottom: 37px !important;
+    }
+  }
+
+  &__colList {
+    display: flex;
+    justify-content: space-between;
+
+    @include mq(768px) {
+      display: none;
+    }
+  }
+
+  &__column {
+    padding: 0 17px;
+    flex-basis: 25%;
+  }
+
+  &__list {
+    padding-left: 20px;
+  }
+
+  &__item {
+    margin-top: 13px;
+
+    @include mq(1440px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    & > a:hover {
+      color: $mainRed;
+      text-decoration: underline;
+    }
+  }
+
+  &__footer {
+    padding-right: 17px;
+    padding-left: 17px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mq(768px) {
+      margin-top: 0;
+      padding: 0;
+    }
+
+    @include mq(660px) {
+      flex-direction: column-reverse;
+    }
+
+    .asideMenu_common {
+      @include mq(479px) {
+        flex-direction: row;
+      }
+    }
+
+    .asideMenu__item {
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @include mq(1024px) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__copy {
+    flex-shrink: 0;
+    margin-right: 15px;
+
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    @include mq(660px) {
+      margin-top: 20px;
+    }
+  }
+}

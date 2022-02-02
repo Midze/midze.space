@@ -1,0 +1,40 @@
+.mainSlider,
+.clients__list_slider {
+  .slick-dots {
+    position: absolute;
+    bottom: 18px;
+
+    display: flex;
+
+    button {
+      width: 10px;
+      height: 10px;
+      margin-right: 25px;
+      padding: 0;
+      border: none;
+
+      font-size: 0;
+
+      border-radius: 50%;
+      background-color: $lightGray;
+      cursor: pointer;
+
+      @include mq(900px) {
+        width: 6px;
+        height: 6px;
+      }
+    }
+
+    .slick-active {
+      button {
+        background-color: $mainRed;
+      }
+    }
+  }
+}
+
+.clients__list_slider {
+  .slick-dots {
+    bottom: -25px;
+  }
+}

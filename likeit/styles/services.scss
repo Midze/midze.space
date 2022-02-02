@@ -1,0 +1,78 @@
+@import "lib/mixin";
+@import "lib/var";
+.header {
+  background-image: none;
+
+  @include mq(1440px) {
+    height: 850px;
+  }
+  @include mq(1024px) {
+    height: auto;
+  }
+}
+.services {
+  padding: 0 17px;
+  padding-bottom: 39px;
+
+  &__text {
+    max-width: 1168px;
+    margin-top: 10px;
+    margin-bottom: 65px;
+
+    font-size: 18px;
+    line-height: 21px;
+
+    @include mq(768px) {
+      font-size: 14px;
+    }
+  }
+
+}
+
+.dirOption {
+  flex-basis: 25%;
+
+  @include mq(1024px) {
+    flex-basis: 48%;
+  }
+
+  @include mq(600px) {
+    flex-basis: 100%;
+  }
+
+  &:hover {
+    padding: 25px 20px 25px 20px;
+    border-top: 4px solid $mainRed;
+
+    background: #FFFFFF;
+    box-shadow: 0 0 30px rgba(239, 0, 47, 0.125);
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+
+      display: block;
+      width: 107px;
+      height: 12px;
+
+      background-color: $mainRed;
+    }
+  }
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 35px;
+
+      @include mq(1440px) {
+        margin-bottom: 25px;
+      }
+    }
+
+  }
+}

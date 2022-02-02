@@ -1,0 +1,130 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title LikeIt
+    link(rel='stylesheet', type='text/css', href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css')
+    link(rel='stylesheet', href='css/nouislider.min.css')
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='css/serviceItem.css')
+  body
+    include tamplate/popup
+    include ../sprite/main.svg
+    .pageWrapper
+      header.header.tripleContainer
+        .asideLeft.asideLeft_auto
+          ul.asideMenu
+            li.asideMenu__item: a(href='#') Behance
+            li.asideMenu__item: a(href='#') Facebook
+            li.asideMenu__item: a(href='#') Instagram
+        .header__container.tripleContainer__center
+          include tamplate/headerTop
+          .serviceItem
+            .breadcrumbs
+              ul.breadcrumbs__list
+                li.breadcrumbs__item: a(href='#') Главная
+                li.breadcrumbs__item: a(href='#') Услуги
+                li.breadcrumbs__item Интернет-агенство Лайкит
+            .serviceItem__title.pageTitle.pageTitle_noNumber
+              h2.pageTitle__text CRM автоматизация
+            .serviceItem__text Избавлем от рутины  автоматизируя бизнес-процессы и внедряя CRM систему. Что это даёт? Не только упрощение контроля за клиентами и сотрудниками, но и позволяет внедрять маркетинговые инструменты проще и быстрее. Комплекс аналитики позволяет Вам держать руку на пульсе.
+            .serviceItem__container
+              .serviceItem__aside
+                ul.serviceItem__list
+                  li.serviceItem__item
+                    .serviceItem__itemLabel Разработка web&mobile
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') Создание интернет-магазина
+                      li.serviceItem__subitem: a(href='#') Корпоративные сайты
+                      li.serviceItem__subitem: a(href='#') Landing pages
+                      li.serviceItem__subitem: a(href='#') Техническая поддержка
+                      li.serviceItem__subitem: a(href='#') Мобильное приложение
+                      li.serviceItem__subitem: a(href='#') Уникальный проект
+                  li.serviceItem__item
+                    .serviceItem__itemLabel UX/UI  дизайн
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') UX/UI дизайн
+                      li.serviceItem__subitem: a(href='#') Фирменный стиль
+                      li.serviceItem__subitem: a(href='#') Создание имиджевой графики
+                      li.serviceItem__subitem: a(href='#') Дизайн
+                      li.serviceItem__subitem: a(href='#') Разработка логотипа
+                      li.serviceItem__subitem: a(href='#') Упаковка бизнеса под ключ
+                  li.serviceItem__item
+                    .serviceItem__itemLabel Digital-маркетинг
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') Маркетинговая стратегия
+                      li.serviceItem__subitem: a(href='#') SEO продвижение
+                      li.serviceItem__subitem: a(href='#') Social Media Marketing
+                      li.serviceItem__subitem: a(href='#') Контекстная реклама
+                      li.serviceItem__subitem: a(href='#') Таргетированная реклама
+                      li.serviceItem__subitem: a(href='#') Квиз-маркетинг
+                  li.serviceItem__item.active
+                    .serviceItem__itemLabel CRM автоматизация
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') Внедрение KPI
+                      li.serviceItem__subitem: a(href='#') Интеграция телефонии
+                      li.serviceItem__subitem: a(href='#') Автоматизация бизнес-процессов
+                      li.serviceItem__subitem: a(href='#') Обмен с 1С
+                      li.serviceItem__subitem: a(href='#') Внедрение CRM
+                .serviceItem__consult
+                  .serviceItem__consultText Нужна консультация или готовы начать проект?
+                  a.serviceItem__consultButton(href='#') Получить консультацию
+              .serviceItem__block
+                ul.serviceItem__optionsList
+                  li.serviceItem__optionsItem
+                    .serviceItem__image
+                      svg.serviceItem__svgImage
+                        use(href='#diagram')
+                    .serviceItem__optionsContent
+                      .serviceItem__optionsLabel Внедрение KPI
+                      .serviceItem__optionsText Разработка и внедрение ключевых показателей эффективности для Вашей компании. Достигайте лучших результатов и подтягивайте свою команду!
+                    .serviceItem__more.mainLink(href='#') Подробнее
+                  li.serviceItem__optionsItem
+                    .serviceItem__image
+                      svg.serviceItem__svgImage
+                        use(href='#fax')
+                    .serviceItem__optionsContent
+                      .serviceItem__optionsLabel Интеграция телефонии
+                      .serviceItem__optionsText Интернет-телефония является выгодным и удобным способом благотворно влиять на развитие бизнеса. Среди ключевых преимуществ использования интернет-телефонии.
+                    .serviceItem__more.mainLink(href='#') Подробнее
+                  li.serviceItem__optionsItem
+                    .serviceItem__image
+                      svg.serviceItem__svgImage
+                        use(href='#real-estate')
+                    .serviceItem__optionsContent
+                      .serviceItem__optionsLabel Автоматизация бизнес-процессов
+                      .serviceItem__optionsText Автоматизация бизнес-процессов – это почти всегда означает ускорение процедур, исключение ошибок, пресловутого «человеческого фактора», оптимизацию отдельных направлений работы и бизнеса в целом.
+                    .serviceItem__more.mainLink(href='#') Подробнее
+                  li.serviceItem__optionsItem
+                    .serviceItem__image
+                      svg.serviceItem__svgImage
+                        use(href='#exchange')
+                    .serviceItem__optionsContent
+                      .serviceItem__optionsLabel Обмен с 1С
+                      .serviceItem__optionsText Внедряем современные системы учета, автоматизируем процессы компании (бухгалтерский, кадровый, оперативный торговый, складской и другие)
+                    .serviceItem__more.mainLink(href='#') Подробнее
+                  li.serviceItem__optionsItem
+                    .serviceItem__image
+                      svg.serviceItem__svgImage
+                        use(href='#computer-crm')
+                    .serviceItem__optionsContent
+                      .serviceItem__optionsLabel Внедрение CRM
+                      .serviceItem__optionsText Автоматизируйте работу отдела продаж и управление проектами, и получите прирост продаж на 20%! Интегрируем CRM-системы любой сложности в любые бизнес-процессы за 1 неделю.
+                    .serviceItem__more.mainLink(href='#') Подробнее
+                h3.serviceItem__subtitle Повышаем эффективность Вашей компании
+                .serviceItem__paragraph Если Вы всё ещё думаете, нужна вам автоматизация или нет, тогда прочитайте 6 весомых причин для её внедрения.
+                br
+                br
+                .serviceItem__paragraph Повышение продуктивности и сокращение трудозатратности, сведение к минимуму ошибок из-за человеческого фактора, экономия затрат на сотрудников, которые выполняют рассылки, приводят в порядок клиентскую базу, исключение потерь в клиентской базе - все данные сохраняются в CRM-систему, сокращение цикла продаж - Вы всегда видите, на какой стадии находятся Ваши переговоры и слабые места. Используйте свои возможности на-максимум.
+        .asideRight.asideRight_auto
+          .asideCopy © 2013-2019 LIKEIT / web-engineering co
+      include tamplate/calc
+      include tamplate/footer
+      .redLine
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+    script(type='text/javascript', src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+    script(src='js/jquery.paroller.min.js')
+    script(src='js/nouislider.min.js')
+    script(src='js/main.js')

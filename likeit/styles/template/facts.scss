@@ -1,0 +1,180 @@
+.facts {
+  padding-top: 160px;
+  height: 1100px;
+
+  background-image: url('../img/shard_2.png'), url('../img/shard_2.png');
+  background-repeat: no-repeat;
+  background-position: -220px 200px, right -150px top 213px;
+  background-size: 293.28px 312.61px;
+
+  @include mq(1440px) {
+    padding-top: 40px;
+    height: 790px;
+  }
+
+  @include mq(900px) {
+    background-image: none;
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  &__container {
+    position: relative;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 17px;
+  }
+
+  &__title {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    padding-top: 130px;
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include mq(1440px) {
+      padding-top: 50px;
+    }
+
+    @include mq(900px) {
+      flex-basis: 100%;
+      justify-content: flex-start;
+    }
+  }
+
+  &__item {
+    flex-basis: 49.5%;
+    margin-bottom: 140px;
+
+    @include mq(1440px) {
+      margin-bottom: 35px;
+    }
+
+    @include mq(900px) {
+      flex-basis: 35%;
+    }
+
+    @include mq(768px) {
+      flex-basis: 49.5%;
+    }
+
+    @include mq(480px) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__value {
+    margin-bottom: 10px;
+
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 900;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__picture {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+
+    @include mq(900px) {
+      display: none;
+    }
+
+    img {
+      display: block;
+      width: 538px;
+      height: 673px;
+
+      @include mq(1440px) {
+        width: 408.82px;
+        height: 511.41px;
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    transform: translate(0);
+
+    opacity: 1;
+
+    transition: 1s ease .5s;
+
+    @include mq(900px) {
+      display: none;
+    }
+
+    &.js-unload {
+      opacity: 0;
+
+      transition: 1s ease .5s;
+    }
+
+    &_small {
+      top: 255px;
+      left: 59.80%;
+      z-index: -1;
+
+      width: 104.2px;
+      height: 165.55px;
+
+      @include mq(1440px) {
+        left: 58%;
+        top: 175px;
+      }
+
+      &.js-unload {
+        transform: translateY(-140%);
+      }
+
+      img {
+        transform: matrix(-0.93, -0.36, -0.36, 0.93, 0, 0);
+      }
+    }
+
+    &_big {
+      left: 85.04%;
+      bottom: 110px;
+
+      width: 171.55px;
+      height: 274.24px;
+
+      @include mq(1440px) {
+        left: 77%;
+        bottom: 20px;
+      }
+
+      &.js-unload {
+        transform: translateX(140%);
+      }
+    }
+
+    &_blur {
+      left: 50.64%;
+      bottom: 65px;
+
+      @include mq(1440px) {
+        left: 47%;
+        bottom: 20px;
+
+        width: 253.8px;
+        height: 258.36px;
+      }
+
+      &.js-unload {
+        transform: translateX(-140%);
+      }
+    }
+  }
+}

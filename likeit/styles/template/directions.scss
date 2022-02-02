@@ -1,0 +1,245 @@
+.directions {
+  margin-top: 125px;
+  padding-bottom: 130px;
+
+  background-image: url('../img/shard_2.png'), url('../img/shard_2.png');
+  background-repeat: no-repeat;
+  background-position: -107px 0, right -210px top 53px;
+  background-size: 222px 237px, 349px 372px;
+
+  @include mq(1440px) {
+    background-position: -10px 0;
+    background-size: 181.22px 195.23px, 221px 237px;
+  }
+
+  @include mq(900px) {
+    height: auto;
+    margin-top: 60px;
+
+    background-image: none;
+  }
+
+  &__container {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    max-width: 1648px;
+    padding: 0 15px;
+  }
+
+  &__picture {
+    position: absolute;
+    visibility: hidden;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    opacity: 0;
+    transition: visibility, opacity 1s ease;
+
+    &.active {
+      position: static;
+      visibility: visible;
+      transform: translateX(0);
+
+      display: flex;
+      opacity: 1;
+
+      transition: visibility, opacity 1s ease;
+
+      @include mq(900px) {
+        display: none;
+      }
+    }
+
+    @include mq(900px) {
+      display: none;
+    }
+
+    img {
+      max-width: 375px;
+
+      @include mq(1440px) {
+        width: 277.32px;
+        height: 508.79px;
+      }
+    }
+  }
+
+  &__content {
+    flex-basis: 50%;
+
+    @include mq(900px) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__image {
+    position: absolute;
+    transform: translate(0);
+
+    opacity: 1;
+
+    transition: 1s ease .5s;
+
+    &.js-animated {
+      animation-duration: .6s;
+      animation-timing-function: ease;
+    }
+
+    @include mq(900px) {
+      display: none;
+    }
+
+    &_small {
+      top: 70px;
+      left: 10.5%;
+      z-index: -1;
+
+      width: 104.2px;
+      height: 165.55px;
+
+      &.js-animated {
+        animation-name: shardMoving1;
+      }
+
+      @include mq(1440px) {
+        left: 9%;
+        top: 30px;
+      }
+
+      img {
+        transform: matrix(-1, 0.01, 0.01, 1, 0, 0);
+      }
+    }
+
+    &_big {
+      left: 30%;
+      top: 120px;
+
+      &.js-animated {
+        animation-name: shardMoving2;
+      }
+
+      @include mq(1440px) {
+        top: 40px;
+
+        width: 178.96px;
+        height: 262.53px;
+      }
+    }
+
+    &_blur {
+      left: 5.64%;
+      bottom: 40px;
+
+      &.js-animated {
+        animation-name: shardMoving3;
+      }
+
+      @include mq(1440px) {
+        left: 4%;
+        bottom: 20px;
+
+        width: 247px;
+        height: 251.44px;
+      }
+    }
+  }
+}
+
+.dirOption {
+  position: relative;
+
+  flex-basis: 49%;
+  margin-bottom: 40px;
+  padding: 29px 20px 25px 20px;
+
+  cursor: pointer;
+
+  transition: background-color, box-shadow .2s ease;
+
+  @include mq(1440px) {
+    margin-bottom: 0;
+  }
+
+  @include mq(480px) {
+    flex-basis: 100%;
+  }
+
+  &.active {
+    padding: 25px 20px 25px 20px;
+    border-top: 4px solid $mainRed;
+
+    background: #FFFFFF;
+    box-shadow: 0 0 30px rgba(239, 0, 47, 0.125);
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+
+      display: block;
+      width: 107px;
+      height: 12px;
+
+      background-color: $mainRed;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 900;
+
+    color: $mainRed;
+
+    @include mq(1440px) {
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+
+  &__item {
+    font-size: 18px;
+    line-height: 21px;
+
+    @include mq(1440px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+
+      @include mq(1440px) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

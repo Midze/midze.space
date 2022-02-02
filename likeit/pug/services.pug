@@ -1,0 +1,78 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title LikeIt
+    link(rel='stylesheet', type='text/css', href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css')
+    link(rel='stylesheet', href='css/nouislider.min.css')
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='css/services.css')
+  body
+    include tamplate/popup
+    include ../sprite/main.svg
+    .pageWrapper
+      header.header.tripleContainer
+        .asideLeft
+          ul.asideMenu
+            li.asideMenu__item: a(href='#') Behance
+            li.asideMenu__item: a(href='#') Facebook
+            li.asideMenu__item: a(href='#') Instagram
+        .header__container.tripleContainer__center
+          include tamplate/headerTop
+          .services
+            .breadcrumbs
+              ul.breadcrumbs__list
+                li.breadcrumbs__item: a(href='#') Главная
+                li.breadcrumbs__item: a(href='#') Услуги
+                li.breadcrumbs__item Интернет-агенство Лайкит
+            .services__title.pageTitle.pageTitle_noNumber
+              h2.pageTitle__text Услуги
+            .services__text Специализируемся на сложных процессах и точечных решениях для вашего бизнеса. Нужен сайт, интернет-магазин, нагрузочное тестирование или маркетинговая стратегия для продвижения компании? Разработаем и внедрим! Наши довольные клиенты и результативность проектов - лучшие доказательства качества и гарантий.
+            .directions__options
+              .dirOption
+                a.dirOption__title(href='/serviceItem.html') Разработка web&mobile
+                ul.dirOption__list
+                  li.dirOption__item: a(href='#') Создание интернет-магазина
+                  li.dirOption__item: a(href='#') Корпоративные сайты
+                  li.dirOption__item: a(href='#') Landing pages
+                  li.dirOption__item: a(href='#') Техническая поддержка
+                  li.dirOption__item: a(href='#') Мобильное приложение
+                  li.dirOption__item: a(href='#') Уникальный проект
+              .dirOption
+                a.dirOption__title(href='/serviceDesign.html') UX/Ui дизайн
+                ul.dirOption__list
+                  li.dirOption__item: a(href='#') UX/Ui дизайн
+                  li.dirOption__item: a(href='#') Фирменный стиль
+                  li.dirOption__item: a(href='#') Создание имиджевой графики
+                  li.dirOption__item: a(href='#') Дизайн
+                  li.dirOption__item: a(href='#') Разработка логотипа
+                  li.dirOption__item: a(href='#') Упаковка бизнеса под ключ
+              .dirOption
+                a.dirOption__title(href='/serviceDigital.html') Digital-маркетинг
+                ul.dirOption__list
+                  li.dirOption__item: a(href='#') Маркетинговая стратегия
+                  li.dirOption__item: a(href='#') SEO продвижение
+                  li.dirOption__item: a(href='#') Social Media Marketing
+                  li.dirOption__item: a(href='#') Контекстная реклама
+                  li.dirOption__item: a(href='#') Таргетированная реклама
+                  li.dirOption__item: a(href='#') Квиз-маркетинг
+              .dirOption
+                a.dirOption__title(href='/serviceCrm.html') CRM автоматизация
+                ul.dirOption__list
+                  li.dirOption__item: a(href='#') Внедрение KPI
+                  li.dirOption__item: a(href='#') Интеграция телефонии
+                  li.dirOption__item: a(href='#') Автоматизация бизнес-процессов
+                  li.dirOption__item: a(href='#') Обмен с 1С
+                  li.dirOption__item: a(href='#') Внедрение CRM
+        .asideRight
+          .asideCopy © 2013-2019 LIKEIT / web-engineering co
+      include tamplate/calc
+      include tamplate/footer
+      .redLine
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+    script(type='text/javascript', src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+    script(src='js/nouislider.min.js')
+    script(src='js/jquery.paroller.min.js')
+    script(src='js/main.js')

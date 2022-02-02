@@ -1,0 +1,108 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title LikeIt
+    link(rel='stylesheet', type='text/css', href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css')
+    link(rel='stylesheet', href='css/nouislider.min.css')
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='css/contacts.css')
+  body
+    include tamplate/popup
+    include ../sprite/main.svg
+    .pageWrapper
+      header.header.tripleContainer
+        .asideLeft
+          ul.asideMenu
+            li.asideMenu__item: a(href='#') Behance
+            li.asideMenu__item: a(href='#') Facebook
+            li.asideMenu__item: a(href='#') Instagram
+        .header__container.tripleContainer__center
+          include tamplate/headerTop
+          .contacts
+            .breadcrumbs
+              ul.breadcrumbs__list
+                li.breadcrumbs__item: a(href='#') Главная
+                li.breadcrumbs__item: a(href='#') Услуги
+                li.breadcrumbs__item Интернет-агенство Лайкит
+            .contacts__title.pageTitle.pageTitle_noNumber
+              h2.pageTitle__text Контакты
+            ul.contacts__infoList
+              li.contacts__infoItem
+                svg.contacts__infoSvg
+                  use(href='#geolocal')
+                .contacts__infoContent
+                  .contacts__infoLabel Центральный офис
+                  .contacts__infoText
+                    | Минск, ул. Казинца 11а
+                    br
+                    | Барановичи,ул. Куйбышево 111
+              li.contacts__infoItem
+                svg.contacts__infoSvg
+                  use(href='#geolocal')
+                .contacts__infoContent
+                  .contacts__infoLabel Справочная служба
+                  .contacts__infoText +375 (29) 322-00-20
+              li.contacts__infoItem
+                svg.contacts__infoSvg
+                  use(href='#geolocal')
+                .contacts__infoContent
+                  .contacts__infoLabel E-mail
+                  .contacts__infoText info@likeit.by
+
+            .contacts__block
+              .contacts__content
+                .contacts__label Региональные представительства
+                .contacts__text Наша компания имеет региональных представителей в Беларуси и Германии. Вы можете обратиться в ближайший к Вам офис для получения дополнительных консультаций.
+              .contacts__consult
+                .contacts__consultText Нужна консультация или готовы начать проект?
+                a.contacts__consultButton(href='#') Получить консультацию
+
+            ul.contacts__adressList
+              li.contacts__adressItem
+                .contacts__adressImage
+                  img(src='img/belarus.png', alt)
+                .contacts__adressContent
+                  .contacts__adressLabel Беларусь
+                  .contacts__adressInfo
+                    | г. Барановичи, ул. Куйбышево 111
+                    br
+                    | 09.00 - 18.00
+                  .contacts__adressPhone +375 (29) 322-00-20
+              li.contacts__adressItem
+                .contacts__adressImage
+                  img(src='img/belarus.png', alt)
+                .contacts__adressContent
+                  .contacts__adressLabel Беларусь
+                  .contacts__adressInfo
+                    | г. Минск, ул. Казинца, 11а
+                    br
+                    | 09.00 - 18.00
+                  .contacts__adressPhone +375 (29) 322-00-20
+              li.contacts__adressItem
+                .contacts__adressImage
+                  img(src='img/germany.png', alt)
+                .contacts__adressContent
+                  .contacts__adressLabel Германия
+                  .contacts__adressInfo
+                    | Prien am Chiemsee, Hochgernstraße, 12a
+                    br
+                    | Пн - Пт. 09.00 - 18.00
+                  .contacts__adressPhone +4 915 215 229 352
+        .asideRight
+          .asideCopy © 2013-2019 LIKEIT / web-engineering co
+      .map.tripleContainer
+        .asideLeft
+        .map__container.tripleContainer__center
+          .map__item
+            iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3Ac410c1267559e6d6fee7293c22d56e17265f77780f86c6ff1b066c7127836c23&source=constructor', width='100%', height='370', frameborder='0')
+        .asideRight
+      include tamplate/footer
+      .redLine
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+    script(type='text/javascript', src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+    script(src='js/nouislider.min.js')
+    script(src='js/jquery.paroller.min.js')
+    script(src='js/main.js')

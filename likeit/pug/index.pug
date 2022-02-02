@@ -1,0 +1,33 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title LikeIt
+    link(rel='stylesheet', type='text/css', href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css')
+    link(rel='stylesheet', href='css/nouislider.min.css')
+    link(rel='stylesheet', href='css/main.css')
+  body
+    include tamplate/popup
+    include ../sprite/main.svg
+    .pageWrapper
+      include tamplate/header
+      include tamplate/directions
+      include tamplate/opportunities
+      include tamplate/facts
+      include tamplate/realm
+      include tamplate/cases
+      include tamplate/clients
+      include tamplate/tech
+      include tamplate/calc
+      include tamplate/footer
+      .redLine
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+    script(type='text/javascript', src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js')
+    script(src='js/nouislider.min.js')
+    script(src='js/jquery.paroller.min.js')
+    script(src='js/main.js')
+    script(src='js/shards.js')

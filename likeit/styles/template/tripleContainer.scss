@@ -1,0 +1,178 @@
+.tripleContainer {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+
+  &__center {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    &_wideToLeft {
+      margin-left: -136px;
+
+      @include mq(900px) {
+        margin-left: 0;
+      }
+    }
+
+    &_wideToRight {
+      margin-right: -136px;
+
+      @include mq(900px) {
+        margin-right: 0;
+      }
+    }
+
+    @include mq(1024px) {
+      padding: 0 35px;
+    }
+    @include mq(479px) {
+      padding: 0 15px;
+    }
+  }
+}
+
+.asideLeft,
+.asideRight {
+  z-index: 4;
+
+  display: flex;
+  justify-content: center;
+  width: 136px;
+  flex-shrink: 0;
+  //height: 100%;
+
+  &_auto {
+    height: auto;
+    max-height: 900px;
+  }
+
+  &_white {
+    color: #fff;
+    
+    .asideMenu,
+    .asideCopy {
+
+      &__item {
+        &::before {
+          background-color: #fff;
+        }
+        &:hover {
+          &::before {
+            background-color: #fff;
+          }
+          color: white;
+        }
+      }
+    }
+  }
+
+  @include mq(1024px) {
+    display: none;
+  }
+}
+
+.asideMenu,
+.asideCopy {
+  transform-origin: center;
+  transform: rotate(-90deg) translateX(50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: auto;
+  margin-top: auto;
+  margin-bottom: 140px;
+
+  &__item {
+    position: relative;
+
+    margin-right: 63px;
+    padding-left: 27px;
+
+    a {
+      display: block;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      display: block;
+      width: 10px;
+      height: 10px;
+
+      background-color: #000;
+
+      transition: .2s ease;
+    }
+
+    transition: .2s ease;
+
+    &:hover {
+      color: $mainRed;
+      text-decoration: underline;
+
+      &::before {
+        background-color: $mainRed;
+      }
+    }
+
+    &_common {
+      margin-right: 23px;
+
+      font-size: 18px;
+      line-height: 21px;
+
+      color: #fff;
+
+      &::before {
+        background-color: #fff;
+      }
+
+      &:hover {
+        color: #fff;
+
+        &::before {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.asideMenu {
+  &__item {
+    @include mq(1440px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &_common {
+    transform: none;
+
+    width: auto;
+    height: auto;
+    margin-bottom: 0;
+
+    @include mq(479px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+.asideCopy {
+  white-space: nowrap;
+
+  @include mq(1440px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

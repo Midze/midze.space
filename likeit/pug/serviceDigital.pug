@@ -1,0 +1,138 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title LikeIt
+    link(rel='stylesheet', type='text/css', href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css')
+    link(rel='stylesheet', href='css/nouislider.min.css')
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='css/serviceItem.css')
+  body
+    include tamplate/popup
+    include ../sprite/main.svg
+    .pageWrapper
+      header.header.tripleContainer
+        .asideLeft.asideLeft_auto
+          ul.asideMenu
+            li.asideMenu__item: a(href='#') Behance
+            li.asideMenu__item: a(href='#') Facebook
+            li.asideMenu__item: a(href='#') Instagram
+        .header__container.tripleContainer__center
+          include tamplate/headerTop
+          .serviceItem
+            .breadcrumbs
+              ul.breadcrumbs__list
+                li.breadcrumbs__item: a(href='#') Главная
+                li.breadcrumbs__item: a(href='#') Услуги
+                li.breadcrumbs__item Интернет-агенство Лайкит
+            .serviceItem__title.pageTitle.pageTitle_noNumber
+              h2.pageTitle__text Digital-маркетинг
+            .serviceItem__text Разрабатываем стратегии для продвижения  в интернет-пространстве, поднимем в выдаче и увеличим целевой трафик без слива бюджета впустую. Выводим сайты на первые позиции в Яндекс и Google. Увеличиваем конверсию сайта в среднем на 30%, заставляем  социальные сети работать на вас и репутацию Вашей компании.
+            .serviceItem__container
+              .serviceItem__aside
+                ul.serviceItem__list
+                  li.serviceItem__item
+                    .serviceItem__itemLabel Разработка web&mobile
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') Создание интернет-магазина
+                      li.serviceItem__subitem: a(href='#') Корпоративные сайты
+                      li.serviceItem__subitem: a(href='#') Landing pages
+                      li.serviceItem__subitem: a(href='#') Техническая поддержка
+                      li.serviceItem__subitem: a(href='#') Мобильное приложение
+                      li.serviceItem__subitem: a(href='#') Уникальный проект
+                  li.serviceItem__item
+                    .serviceItem__itemLabel UX/UI  дизайн
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') UX/UI дизайн
+                      li.serviceItem__subitem: a(href='#') Фирменный стиль
+                      li.serviceItem__subitem: a(href='#') Создание имиджевой графики
+                      li.serviceItem__subitem: a(href='#') Дизайн
+                      li.serviceItem__subitem: a(href='#') Разработка логотипа
+                      li.serviceItem__subitem: a(href='#') Упаковка бизнеса под ключ
+                  li.serviceItem__item.active
+                    .serviceItem__itemLabel Digital-маркетинг
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') Маркетинговая стратегия
+                      li.serviceItem__subitem: a(href='#') SEO продвижение
+                      li.serviceItem__subitem: a(href='#') Social Media Marketing
+                      li.serviceItem__subitem: a(href='#') Контекстная реклама
+                      li.serviceItem__subitem: a(href='#') Таргетированная реклама
+                      li.serviceItem__subitem: a(href='#') Квиз-маркетинг
+                  li.serviceItem__item
+                    .serviceItem__itemLabel CRM автоматизация
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') Внедрение KPI
+                      li.serviceItem__subitem: a(href='#') Интеграция телефонии
+                      li.serviceItem__subitem: a(href='#') Автоматизация бизнес-процессов
+                      li.serviceItem__subitem: a(href='#') Обмен с 1С
+                      li.serviceItem__subitem: a(href='#') Внедрение CRM
+                .serviceItem__consult
+                  .serviceItem__consultText Нужна консультация или готовы начать проект?
+                  a.serviceItem__consultButton(href='#') Получить консультацию
+              .serviceItem__block
+                ul.serviceItem__optionsList
+                  li.serviceItem__optionsItem
+                    .serviceItem__image
+                      svg.serviceItem__svgImage
+                        use(href='#strategy')
+                    .serviceItem__optionsContent
+                      .serviceItem__optionsLabel Маркетинговая стратегия
+                      .serviceItem__optionsText Отличие продвижения, основанного на цифровых технологиях от традиционного интернет-маркетинга в более широком диапазоне каналов воздействия на потребителя.
+                    .serviceItem__more.mainLink(href='#') Подробнее
+                  li.serviceItem__optionsItem
+                    .serviceItem__image
+                      svg.serviceItem__svgImage
+                        use(href='#website')
+                    .serviceItem__optionsContent
+                      .serviceItem__optionsLabel SEO продвижение сайта
+                      .serviceItem__optionsText Базовая оптимизация — это комплекс мер из 50 шагов, который подготовит сайт к продвижению в поисковых системах, поднимет его в выдаче и увеличит целевой трафик без рекламного бюджета.
+                    .serviceItem__more.mainLink(href='#') Подробнее
+                  li.serviceItem__optionsItem
+                    .serviceItem__image
+                      svg.serviceItem__svgImage
+                        use(href='#social-media')
+                    .serviceItem__optionsContent
+                      .serviceItem__optionsLabel Social Media Marketing
+                      .serviceItem__optionsText Приводим клиентов из социальных сетей. Заявки из Фейсбука от 140 рублей – в 5 раз дешевле контекстной рекламы!
+                    .serviceItem__more.mainLink(href='#') Подробнее
+                  li.serviceItem__optionsItem
+                    .serviceItem__image
+                      svg.serviceItem__svgImage
+                        use(href='#purpose')
+                    .serviceItem__optionsContent
+                      .serviceItem__optionsLabel Контекстная реклама
+                      .serviceItem__optionsText Работаем по модели performance. Приводим целевую аудиторию с оплатой за результат. От заявки в онлайн-чат до первой покупки и повторных продаж. Вы платите только за результат, и в этом наше преимущество!
+                    .serviceItem__more.mainLink(href='#') Подробнее
+                  li.serviceItem__optionsItem
+                    .serviceItem__image
+                      svg.serviceItem__svgImage
+                        use(href='#target')
+                    .serviceItem__optionsContent
+                      .serviceItem__optionsLabel Таргетированная реклама
+                      .serviceItem__optionsText Меньше трат на представление бизнеса. Дающему объявление не всегда нужно даже иметь собственный сайт. Порой хватает и сообщества или личной страницы в социальных сетях.
+                    .serviceItem__more.mainLink(href='#') Подробнее
+                  li.serviceItem__optionsItem
+                    .serviceItem__image
+                      svg.serviceItem__svgImage
+                        use(href='#article')
+                    .serviceItem__optionsContent
+                      .serviceItem__optionsLabel E-mail-маркетинг
+                      .serviceItem__optionsText Важнейший инструмент в современном продвижении сайта и продукции на рынке. Он делаем вашу аудиторию более лояльной и мотивированной к покупке.
+                    .serviceItem__more.mainLink(href='#') Подробнее
+                h3.serviceItem__subtitle Продвигаем: сайты, бренды, приложения
+                .serviceItem__paragraph Используем новые подходы в разработке стратегии. Исследуем Вашу компанию и выбираем наиболее эффективные каналы привлечения клиентов. Проводим тестирования и анализируем полученные результаты для оптимизации рекламного бюджета.
+                br
+                br
+                .serviceItem__paragraph Привлекаем клиентов из социальных сетей. Заявки из SMM обходятся в 1,5-2 дешевле, чем из контекстной рекламы, SEO или проплаченных публикаций. В нашей практике были случаи, когда заявка и покупка с таргетированной рекламы обходились в 5 раз дешевле, чем из контекста. Для быстрого старта продаж настроим контекстную рекламу. За счет продуманных креативов, тщательной подгонки под интересы аудитории и высоких показателей CTR вы получите больше кликов, больше заказов, больше продаж.
+        .asideRight.asideRight_auto
+          .asideCopy © 2013-2019 LIKEIT / web-engineering co
+      include tamplate/calc
+      include tamplate/footer
+      .redLine
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+    script(type='text/javascript', src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+    script(src='js/jquery.paroller.min.js')
+    script(src='js/nouislider.min.js')
+    script(src='js/main.js')

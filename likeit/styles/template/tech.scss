@@ -1,0 +1,56 @@
+.tech {
+  height: 550px;
+
+  background-image: url('../img/shard_2.png'), url('../img/shard_2.png');
+  background-repeat: no-repeat;
+  background-position: -220px 200px, right -150px top 213px;
+  background-size: 293.28px 312.61px;
+
+  @include mq(900px) {
+    height: auto;
+
+    background-image: none;
+  }
+
+  &__container {
+    padding-right: 17px;
+    padding-left: 17px;
+  }
+
+  &__header {
+    margin-bottom: 100px;
+
+    @include mq(768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex-basis: 31%;
+    margin-bottom: 40px;
+
+    font-size: 18px;
+    line-height: 23px;
+
+    @include mq(768px) {
+      flex-basis: 46%;
+    }
+
+    @include mq(480px) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__label {
+    margin-bottom: 20px;
+
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+}

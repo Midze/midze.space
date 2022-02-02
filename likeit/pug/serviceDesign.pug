@@ -1,0 +1,132 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title LikeIt
+    link(rel='stylesheet', type='text/css', href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css')
+    link(rel='stylesheet', href='css/nouislider.min.css')
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='css/serviceItem.css')
+  body
+    include tamplate/popup
+    include ../sprite/main.svg
+    .pageWrapper
+      header.header.tripleContainer
+        .asideLeft.asideLeft_auto
+          ul.asideMenu
+            li.asideMenu__item: a(href='#') Behance
+            li.asideMenu__item: a(href='#') Facebook
+            li.asideMenu__item: a(href='#') Instagram
+        .header__container.tripleContainer__center
+          include tamplate/headerTop
+          .serviceItem
+            .breadcrumbs
+              ul.breadcrumbs__list
+                li.breadcrumbs__item: a(href='#') Главная
+                li.breadcrumbs__item: a(href='#') Услуги
+                li.breadcrumbs__item Интернет-агенство Лайкит
+            .serviceItem__title.pageTitle.pageTitle_noNumber
+              h2.pageTitle__text UX/UI дизайн
+            .serviceItem__text 
+              | Хороший дизайн делает сложные интерфейсы простыми, понятными и удобными для пользователя.
+              br
+              | Помогает создать правильный имидж компании и обеспечить узнаваемость бренда.
+            .serviceItem__container
+              .serviceItem__aside
+                ul.serviceItem__list
+                  li.serviceItem__item
+                    .serviceItem__itemLabel Разработка web&mobile
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') Создание интернет-магазина
+                      li.serviceItem__subitem: a(href='#') Корпоративные сайты
+                      li.serviceItem__subitem: a(href='#') Landing pages
+                      li.serviceItem__subitem: a(href='#') Техническая поддержка
+                      li.serviceItem__subitem: a(href='#') Мобильное приложение
+                      li.serviceItem__subitem: a(href='#') Уникальный проект
+                  li.serviceItem__item.active
+                    .serviceItem__itemLabel UX/UI  дизайн
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') UX/UI дизайн
+                      li.serviceItem__subitem: a(href='#') Фирменный стиль
+                      li.serviceItem__subitem: a(href='#') Создание имиджевой графики
+                      li.serviceItem__subitem: a(href='#') Дизайн
+                      li.serviceItem__subitem: a(href='#') Разработка логотипа
+                      li.serviceItem__subitem: a(href='#') Упаковка бизнеса под ключ
+                  li.serviceItem__item
+                    .serviceItem__itemLabel Digital-маркетинг
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') Маркетинговая стратегия
+                      li.serviceItem__subitem: a(href='#') SEO продвижение
+                      li.serviceItem__subitem: a(href='#') Social Media Marketing
+                      li.serviceItem__subitem: a(href='#') Контекстная реклама
+                      li.serviceItem__subitem: a(href='#') Таргетированная реклама
+                      li.serviceItem__subitem: a(href='#') Квиз-маркетинг
+                  li.serviceItem__item
+                    .serviceItem__itemLabel CRM автоматизация
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') Внедрение KPI
+                      li.serviceItem__subitem: a(href='#') Интеграция телефонии
+                      li.serviceItem__subitem: a(href='#') Автоматизация бизнес-процессов
+                      li.serviceItem__subitem: a(href='#') Обмен с 1С
+                      li.serviceItem__subitem: a(href='#') Внедрение CRM
+                .serviceItem__consult
+                  .serviceItem__consultText Нужна консультация или готовы начать проект?
+                  a.serviceItem__consultButton(href='#') Получить консультацию
+              .serviceItem__block
+                ul.serviceItem__optionsList
+                  li.serviceItem__optionsItem
+                    .serviceItem__image
+                      svg.serviceItem__svgImage
+                        use(href='#layers')
+                    .serviceItem__optionsContent
+                      .serviceItem__optionsLabel Фирменный стиль
+                      .serviceItem__optionsText Фирменный стиль – это визуальное представление вашей компании. Цветовая палитра, шрифты и графика – все это создает запоминающийся потребителями образ компании.
+                    .serviceItem__more.mainLink(href='#') Подробнее
+                  li.serviceItem__optionsItem
+                    .serviceItem__image
+                      svg.serviceItem__svgImage
+                        use(href='#web-design')
+                    .serviceItem__optionsContent
+                      .serviceItem__optionsLabel Создание имиджевой графики
+                      .serviceItem__optionsText Благодаря техническому прогрессу в области дизайна ежедневно появляется множество средств для грамотного представления компании, демонстрации ее отличительных черт и формирования положительного имиджа..
+                    .serviceItem__more.mainLink(href='#') Подробнее
+                  li.serviceItem__optionsItem
+                    .serviceItem__image
+                      svg.serviceItem__svgImage
+                        use(href='#pencil-case')
+                    .serviceItem__optionsContent
+                      .serviceItem__optionsLabel Дизайн
+                      .serviceItem__optionsText Интерфейс сайта может помочь в удержании аудитории только при одном условии – удобство и притягательность. А вы задумываетесь над тем, как видят Ваш сайт клиенты?
+                    .serviceItem__more.mainLink(href='#') Подробнее
+                  li.serviceItem__optionsItem
+                    .serviceItem__image
+                      svg.serviceItem__svgImage
+                        use(href='#setting')
+                    .serviceItem__optionsContent
+                      .serviceItem__optionsLabel Разработка логотипа
+                      .serviceItem__optionsText Уникальный логотип создает эксклюзивный образ компании, способствующий запоминаемости. Благодаря грамотному дизайну логотипа вы сможете заслужить доверие аудитории за счет правильной подачи ваших услуг.
+                    .serviceItem__more.mainLink(href='#') Подробнее
+                  li.serviceItem__optionsItem
+                    .serviceItem__image
+                      svg.serviceItem__svgImage
+                        use(href='#approve-invoice')
+                    .serviceItem__optionsContent
+                      .serviceItem__optionsLabel Упаковка бизнеса под ключ
+                      .serviceItem__optionsText Позиционирование, дизайн, сайт и мобильное приложение,системы лояльности,  - всё это создаёт полный образ компании для клиента. Для того, чтобы Вы оставили о себе
+                    .serviceItem__more.mainLink(href='#') Подробнее
+                h3.serviceItem__subtitle Дизайн сайтов в Минске
+                .serviceItem__paragraph Только профессиональная команда знает как разработать продукт, который будет работать на своего владельца. 80% проектов в интернете не обеспечивают их обладателей стабильным доходом. Проекты, которые разрабатываем мы нацелены на результат и приносят прибыль.
+                .serviceItem__quote Дизайн - это инвестиция, а не расходы.
+                .serviceItem__paragraph Наши сайты привлекают новых клиентов, а интернет-магазины приносят прибыль с конверсией в покупки до 40%. Все созданные интернет-проекты адаптивны, быстро загружаются и идеально отображаются на любых устройствах – телефонах, планшетах, десктопах и даже на мониторах с разрешением 3200х2400. Не срываем дедлайны и предоставляем 1 год неограниченной технической поддержки.
+        .asideRight.asideRight_auto
+          .asideCopy © 2013-2019 LIKEIT / web-engineering co
+      include tamplate/calc
+      include tamplate/footer
+      .redLine
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+    script(type='text/javascript', src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+    script(src='js/jquery.paroller.min.js')
+    script(src='js/nouislider.min.js')
+    script(src='js/main.js')

@@ -1,0 +1,66 @@
+@import "lib/normalize";
+@import "lib/mixin";
+@import "lib/var";
+@import "lib/fonts";
+/*
+selector {
+  positioning
+
+  block-model
+
+  text
+
+  decorate
+
+  animation
+
+  else
+}
+*/
+//Global Style
+
+@import "template/baseSettings";
+
+@import 'template/tripleContainer';
+
+@import "template/header";
+
+@import "template/langSwitch";
+
+@import "template/breadcrumbs";
+
+@import "template/mainLink";
+
+@import "template/headerSlider";
+
+@import "template/slickRewrite";
+
+@import "template/pageTitle";
+
+@import "template/directions";
+
+@import "template/preload";
+
+@import "template/opportunities";
+
+@import "template/facts";
+
+@import "template/mainMenu";
+
+@import "template/realm";
+
+@import "template/cases";
+
+@import "template/clients";
+
+@import "template/tech";
+
+@import "template/calc";
+
+@import "template/footer";
+
+
+
+
+
+

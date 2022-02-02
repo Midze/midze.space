@@ -1894,9 +1894,6 @@
   </div>
   <div class="modal mobile-card hide"
     data-text="Уточните размер, вид борта и дополнительные ингридиенты перед добавлением товара в корзину!"></div>
-  <script src="assets/js/script.js" charset="utf-8"></script>
-  <script src="assets/js/main.js" charset="utf-8"></script>
-  <script src="assets/js/nav.js" charset="utf-8"></script>
   <script src="assets/js/slick/slick.min.js"></script>
   <script type="text/javascript">
     $('.main-slider').slick({
@@ -1909,31 +1906,9 @@
       autoplay: true
     });
   </script>
-  <script>
-
-    let data = {
-      width: $(window).width(),
-      height: $(window).height(),
-      user: navigator.userAgent
-    }
-    console.log('width', data.width);
-    console.log('height', data.height);
-    console.log('user', data.user);
-
-    $.ajax({
-      method: "GET",
-      url: "user.php",
-      data: {
-        width: data.width,
-        height: data.height,
-        user: data.user
-      }
-    })
-      .done(function (msg) {
-        console.log("Data Saved: " + msg);
-      });
-
-  </script>
+  <script src="assets/js/script.js" charset="utf-8"></script>
+  <script src="assets/js/main.js" charset="utf-8"></script>
+  <script src="assets/js/nav.js" charset="utf-8"></script>
 </body>
 
 </html>

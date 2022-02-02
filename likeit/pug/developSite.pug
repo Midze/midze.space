@@ -1,0 +1,272 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title LikeIt
+    link(rel='stylesheet', type='text/css', href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css')
+    link(rel='stylesheet', href='css/nouislider.min.css')
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='css/serviceItem.css')
+  body
+    include tamplate/popup
+    include ../sprite/main.svg
+    .pageWrapper
+      header.header.tripleContainer
+        .asideLeft.asideLeft_auto
+          ul.asideMenu
+            li.asideMenu__item: a(href='#') Behance
+            li.asideMenu__item: a(href='#') Facebook
+            li.asideMenu__item: a(href='#') Instagram
+        .header__container.tripleContainer__center
+          include tamplate/headerTop
+          .serviceItem
+            .breadcrumbs
+              ul.breadcrumbs__list
+                li.breadcrumbs__item: a(href='#') Главная
+                li.breadcrumbs__item: a(href='#') Услуги
+                li.breadcrumbs__item: a(href='#') Интернет-агенство Лайкит
+                li.breadcrumbs__item: a(href='#') Разработка web&mobile
+            .serviceItem__title.pageTitle.pageTitle_noNumber
+              h2.pageTitle__text Разработка корпоративных сайтов
+            .serviceItem__text Корпоративные сайты - лицо Вашей компании в интернете. Наши сайты адаптивны, быстро загружаются и отображаются идеально на любых устройствах, а самое главное - они производят нужное впечатление на Ваших клиентов.
+            .serviceItem__container
+              .serviceItem__aside
+                ul.serviceItem__list
+                  li.serviceItem__item.active
+                    .serviceItem__itemLabel Разработка web&mobile
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') Создание интернет-магазина
+                      li.serviceItem__subitem: a(href='#') Корпоративные сайты
+                      li.serviceItem__subitem: a(href='#') Landing pages
+                      li.serviceItem__subitem: a(href='#') Техническая поддержка
+                      li.serviceItem__subitem: a(href='#') Мобильное приложение
+                      li.serviceItem__subitem: a(href='#') Уникальный проект
+                  li.serviceItem__item
+                    .serviceItem__itemLabel UX/UI  дизайн
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') UX/UI дизайн
+                      li.serviceItem__subitem: a(href='#') Фирменный стиль
+                      li.serviceItem__subitem: a(href='#') Создание имиджевой графики
+                      li.serviceItem__subitem: a(href='#') Дизайн
+                      li.serviceItem__subitem: a(href='#') Разработка логотипа
+                      li.serviceItem__subitem: a(href='#') Упаковка бизнеса под ключ
+                  li.serviceItem__item
+                    .serviceItem__itemLabel Digital-маркетинг
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') Маркетинговая стратегия
+                      li.serviceItem__subitem: a(href='#') SEO продвижение
+                      li.serviceItem__subitem: a(href='#') Social Media Marketing
+                      li.serviceItem__subitem: a(href='#') Контекстная реклама
+                      li.serviceItem__subitem: a(href='#') Таргетированная реклама
+                      li.serviceItem__subitem: a(href='#') Квиз-маркетинг
+                  li.serviceItem__item
+                    .serviceItem__itemLabel CRM автоматизация
+                    ul.serviceItem__sublist
+                      li.serviceItem__subitem: a(href='#') Внедрение KPI
+                      li.serviceItem__subitem: a(href='#') Интеграция телефонии
+                      li.serviceItem__subitem: a(href='#') Автоматизация бизнес-процессов
+                      li.serviceItem__subitem: a(href='#') Обмен с 1С
+                      li.serviceItem__subitem: a(href='#') Внедрение CRM
+                .serviceItem__consult
+                  .serviceItem__consultText Нужна консультация или готовы начать проект?
+                  a.serviceItem__consultButton(href='#') Получить консультацию
+              .serviceItem__block
+                .serviceItem__doubleImage.serviceItem__doubleImage_site
+                  img(src='img/siteGirl.png', alt)
+                .serviceItem__orderWrapper
+                  .serviceItem__paragraph Мы твердо придерживаемся мнения о том, что корпоративный сайт– это в первую очередь имиджевый инструмент без которого невозможно обойтись в условиях современного рынка.
+                  .serviceItem__orderLink.mainLink(href='#') Заказать услугу
+                .serviceItem__text.serviceItem__text_noMargin Заводя несколько разобщенных страниц по принципу «кому надо, тот найдет», бизнесмен или компания не только теряют клиентов лишаются возможности лишний раз подчеркнуть значение компании не только для своих сотрудников, но и для будущих покупателей и клиентов.
+                .serviceItem__text.serviceItem__text_noMargin При этом многие компании прекрасно осознают возможности, которые предоставляет собственный корпоративный сайт, но их отпугивает сложность разработки и кажущаяся громоздкость проекта, который необходимо поддерживать собственными силами.
+                h3.serviceItem__subtitle Разработка корпоративных сайтов
+                .serviceItem__paragraph.serviceItem__paragraph_withLike
+                  | Главное отличие корпоративных сайтов - многозадачность. Именно поэтому качественный сайт не только помогает выстроить позиционирование и имидж компании, а ещё и продавать Ваши услуги или товары.
+                  br
+                  | Залог эффективного проекта - правильно поставленные задачи и грамотная команда, в которой каждый специалист выполняет свою работу.
+                h3.serviceItem__subtitle Что входит в разработку?
+                .serviceItem__paragraph.serviceItem__paragraph_topClose Каждый этап проекта, несомненно, важен для конечного результата.
+                ul.serviceItem__includsList
+                  li.serviceItem__includesItem
+                    .serviceItem__includesImage
+                      svg.serviceItem__svgImage
+                        use(href='#computer-graphic')
+                    .serviceItem__includesContent
+                      .serviceItem__includesLabel Определение целей бизнеса и разработка концепции будущего сайта.
+                      .serviceItem__includesText Для нас важно, чтобы корпоративный сайт был уместным инструментом для улучшения имиджа компании, а не казался бессмысленной тратой ресурсов. Для этого перед непосредственным началом разработки проводится оценка деятельности компании, маркетинговые исследования и разрабатывается стратегия для ее продвижения в онлайн-пространстве.
+                  li.serviceItem__includesItem
+                    .serviceItem__includesImage
+                      svg.serviceItem__svgImage
+                        use(href='#cloud-computing2')
+                    .serviceItem__includesContent
+                      .serviceItem__includesLabel Проектирование и разработка дизайна.
+                      .serviceItem__includesText Наша команда прекрасно понимает всю важность дизайна и его элементов. Дизайн должен не только располагать к себе, но и быть удобным и понятным клиенту. Прототипируем и прорабатываем целевую аудиторию для точного попадания в цель.
+                  li.serviceItem__includesItem
+                    .serviceItem__includesImage
+                      svg.serviceItem__svgImage
+                        use(href='#computer')
+                    .serviceItem__includesContent
+                      .serviceItem__includesLabel Разработка функционала
+                      .serviceItem__includesText На этом этапе можно значительно расширить функционал корпоративного сайта, совместив его с другими видами интернет-страниц. Возможности будут рассчитаны, исходя из задач, которые должен выполнять сайт и Вашей целевой аудитории.
+                  li.serviceItem__includesItem
+                    .serviceItem__includesImage
+                      svg.serviceItem__svgImage
+                        use(href='#diagram')
+                    .serviceItem__includesContent
+                      .serviceItem__includesLabel Оптимизация для дальнейшего продвижения
+                      .serviceItem__includesText Сразу делаем сайт видимым для поисковых систем. Вам не нужно будет дополнительно готовить сайт к продвижению.
+                  li.serviceItem__includesItem
+                    .serviceItem__includesImage
+                      svg.serviceItem__svgImage
+                        use(href='#promotion')
+                    .serviceItem__includesContent
+                      .serviceItem__includesLabel Тестирование и запуск
+                      .serviceItem__includesText Тестируем весь сайт от и до: проверяем ошибки, адаптивность на всех устройствах, корректность работы форм, скорость загрузки и т.д
+                  li.serviceItem__includesItem
+                    .serviceItem__includesImage
+                      svg.serviceItem__svgImage
+                        use(href='#support')
+                    .serviceItem__includesContent
+                      .serviceItem__includesLabel Техническая поддержка
+                      .serviceItem__includesText Консультируем по любым вопросам, связанным с функционалом интернет-магазина, своевременно исправляем неполадки и трудности эксплуатации.
+                .serviceItem__questions
+                  .serviceItem__questionsImage
+                    img(src="img/questionsImage.png", alt)
+                  .serviceItem__questionsContent
+                    .serviceItem__questionsLabel У вас есть вопросы?
+                    .serviceItem__questionsText Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и с удовольствием проконсультируем!
+                  button.serviceItem__questionsButton Получить консультацию сейчас
+                .serviceItem__orderWrapper
+                  .serviceItem__innerTitle.pageTitle.pageTitle_noNumber
+                    h3.pageTitle__text Портфолио
+                  .serviceItem__orderLink.mainLink(href='#') Смотреть все кейсы
+                .cases__slider.cases__slider_inner
+                  .cases__item
+                    .cases__imageWrapper
+                      img.cases__image(src="img/caseImg.jpg", alt)
+                    .cases__overlay
+                    .cases__content
+                      .cases__title Aminohome.by
+                      .cases__label Интернет магазин
+                      .cases__text Современная дизайн мебельного ритейлера – баланс красоты и комфорта.
+                      a.cases__more.mainLink(href='#') Подробнее
+                  .cases__item
+                    .cases__imageWrapper
+                      img.cases__image(src="img/caseImg.jpg", alt)
+                    .cases__overlay
+                    .cases__content
+                      .cases__title Aminohome.by
+                      .cases__label Интернет магазин
+                      .cases__text Современная дизайн мебельного ритейлера – баланс красоты и комфорта.
+                      a.cases__more.mainLink(href='#') Подробнее
+                  .cases__item
+                    .cases__imageWrapper
+                      img.cases__image(src="img/caseImg.jpg", alt)
+                    .cases__overlay
+                    .cases__content
+                      .cases__title Aminohome.by
+                      .cases__label Интернет магазин
+                      .cases__text Современная дизайн мебельного ритейлера – баланс красоты и комфорта.
+                      a.cases__more.mainLink(href='#') Подробнее
+                  .cases__item
+                    .cases__imageWrapper
+                      img.cases__image(src="img/caseImg.jpg", alt)
+                    .cases__overlay
+                    .cases__content
+                      .cases__title Aminohome.by
+                      .cases__label Интернет магазин
+                      .cases__text Современная дизайн мебельного ритейлера – баланс красоты и комфорта.
+                      a.cases__more.mainLink(href='#') Подробнее
+                  .cases__item
+                    .cases__imageWrapper
+                      img.cases__image(src="img/caseImg.jpg", alt)
+                    .cases__overlay
+                    .cases__content
+                      .cases__title Aminohome.by
+                      .cases__label Интернет магазин
+                      .cases__text Современная дизайн мебельного ритейлера – баланс красоты и комфорта.
+                      a.cases__more.mainLink(href='#') Подробнее
+                  .cases__item
+                    .cases__imageWrapper
+                      img.cases__image(src="img/caseImg.jpg", alt)
+                    .cases__overlay
+                    .cases__content
+                      .cases__title Aminohome.by
+                      .cases__label Интернет магазин
+                      .cases__text Современная дизайн мебельного ритейлера – баланс красоты и комфорта.
+                      a.cases__more.mainLink(href='#') Подробнее
+                h3.serviceItem__subtitle Что мы используем?
+                .serviceItem__paragraph.serviceItem__paragraph_topClose Реализовать простейший интернет-магазин можно, не прибегая к использованию современных CMS, но результат едва ли удовлетворит даже самого нетребовательного пользователя.
+                .cms__list
+                  .cms__item
+                    img(src='img/bitrix-logo.png', alt)
+                  .cms__item
+                    img(src='img/modx.png', alt)
+                  .cms__item
+                    img(src='img/magento.png', alt)
+                  .cms__item
+                    img(src='img/opencart.png', alt)
+                  .cms__item
+                    img(src='img/drupal.png', alt)
+                  .cms__item
+                    img(src='img/wordpress-logo-hoz-rgb.png', alt)
+                .download
+                  .download__image
+                    img(src='img/starGreen.png', alt)
+                  .download__text
+                    | Какой должен быть корпоративный сайт в 2019 году? 
+                    br
+                    | Скачайте чек-лист с рекомендациями и проверьте свой сайт.
+                  .download__button Скачать бесплатно
+                .serviceItem__text.serviceItem__text_withLink
+                  | Теперь, когда Вы выбрали платформу, нужно определиться- нужна ли интеграция с CRM. Об этом можно подробно прочитать  &nbsp;
+                  a(href='#') здесь
+                .innerList__container
+                  .innerList__label На какие этапы разбиваем Ваш проект?
+                  ul.innerList__list
+                    li.innerList__item Конечно, можно сделать сайт на бесплатном шаблоне самостоятельно. Но будет ли он соответствовать ожиданиям и выполнять все функции? Конечно, нет.
+                    li.innerList__item Разработка дизайна, который будет создавать нужный имидж компании, займёт не 5 минут, и даже не один час. Этот этап очень важен для успеха проекта, поэтому лучшим решением будет - доверить его профессионалу.
+                    li.innerList__item Правильное донесение информации до покупателей и партнёров - ещё один важный момент. Конструктор предполагает стандарные решения, которые могут не подойти к вашей целевой аудитории;
+                    li.innerList__item Продвижение - без него сайт практически не будет работать. Сайты, разработанные на конструкторах часто не соответствуют техническим требованиям, имеют недочёты в оформлении и внутренние ошибки. А значит и продвигать сайт будет затруднительно.
+                .serviceItem__text.serviceItem__text_noMargin Мы хорошо знаем, что нет ничего более опасного, чем поверхностные знания, поэтому предпочитаем в полной мере задействовать потенциал нашей команды, привлекая узкоспециализированных специалистов с большим опытом работы во вверенной им области.
+                .serviceItem__text.serviceItem__text_noMargin Поэтому над вашим проектом будет работать целая команда с дизайнером, SEO-специалистом, маркетологом, верстальщиком и разработчиками, копирайтером, PPC-специалистом, интернет-магазин будет продавать сразу после запуска.
+                h3.pageTitle__text.pageTitle__text_lower.pageTitle__text_margins Почему нам доверяют клиенты?
+                .serviceItem__text.serviceItem__text_noMargin За 7 лет работы мы разработали больше 200 успешных проектов, которые продолжают эффективно работать до сих пор. Познакомиться с нашей командой ближе можно на странице О компании, прочитать отзывы о выполненных проектах можно здесь.
+                .propose
+                  .propose__text
+                    span Каждый созданный нами сайт
+                    | &nbsp;– это еще один повод для гордости, а также довольный клиент, с которым мы будем выстраиать доверительные и долгие отношения.
+                  button.propose__button Хочу получить коммерческое предложение
+                .serviceItem__text.serviceItem__text_noMargin.serviceItem__text_withLink
+                  | Чтобы использовать весь функционал интернет-магазина и получать много постоянных клиентов, необходимо качественное продвижение. Мы предлагаем разработку стратегии продвижения с наиболее востребованными каналами. Выбор подходящих каналов&nbsp;
+                  a(href="#") digital-маркетинга
+                  | &nbsp;происходит после исследований и изучения тонкостей ниши, конкурентов. Стратегия определятся как идеальное соотношение максимального охвата качественного трафика/бюджет.
+                .saling
+                  .saling__image
+                    img(src="img/salingImage.png", alt)
+                  .saling__content
+                    .saling__label КАК ИСПОЛЬЗОВАТЬ ЛЕТО НА МАКСИМУМ?
+                    .saling__text
+                      | Заказать интернет-магазин и получить настройку рекламных кампананий на самые&nbsp;
+                      span ГОРЯЧИЕ
+                      | &nbsp;запросы&nbsp;
+                      span в подарок!
+                  .saling__date
+                    | до&nbsp;
+                    span 30
+                    br
+                    | августа
+                .propose.propose_unstyled
+                  .propose__text Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы.
+                  button.propose__button Заказать интернет-магазин
+        .asideRight.asideRight_auto
+          .asideCopy © 2013-2019 LIKEIT / web-engineering co
+      include tamplate/calc
+      include tamplate/footer
+      .redLine
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+    script(type='text/javascript', src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+    script(src='js/nouislider.min.js')
+    script(src='js/jquery.paroller.min.js')
+    script(src='js/main.js')
