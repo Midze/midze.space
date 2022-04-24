@@ -1,0 +1,128 @@
+.section {
+  &_main {
+    position: relative;
+    padding-top: 62px;
+  }
+  &__bg-image {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    height: calc(100vh - 62px);
+    @media (max-width: 1200px) {
+      height: 600px;
+    }
+    @media (max-width: 767px) {
+      height: calc(100vh - 62px);
+      @media (max-width: 767px) {
+        background-image: url("../img/drum_studio-mob.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+  &__overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(000, 000, 000, 0.8);
+    @media (max-width: 767px) {
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 8.85) 0%,
+        rgba(000, 000, 000, 0.65) 20%,
+        rgba(000, 000, 000, 0.65) 70%,
+        rgba(0, 0, 0, 1) 100%
+      );
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .container {
+      position: relative;
+      top: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.title {
+  display: flex;
+  text-transform: uppercase;
+  margin-top: 25%;
+  margin-left: 50px;
+  z-index: 1;
+  position: relative;
+  @media (max-width: 1200px) {
+    margin-top: 160px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 30vh;
+    margin-left: 0;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 5.3rem;
+    color: $main-font-color;
+    span {
+      color: $secondary-font-color;
+    }
+    @media (max-width: 767px) {
+      font-size: 4.3rem;
+    }
+  }
+  h2 {
+    margin-left: 85px;
+    font-size: 2.3rem;
+    color: $main-font-color;
+    align-self: flex-end;
+  }
+  @media (max-width: 767px) {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+}
+
+.square {
+  width: 505px;
+  height: 265px;
+  position: absolute;
+  @media screen and(max-width: 1200px) {
+    width: 450px;
+    height: 230px;
+  }
+  @media (max-width: 767px) {
+    display: none;
+  }
+  &_top {
+    font-size: 5.3rem;
+    border: 5px solid $main-font-color;
+    position: absolute;
+    top: -8%;
+  }
+  &_bottom {
+    border: 5px solid $secondary-font-color;
+    font-size: 2.3rem;
+    color: $main-font-color;
+    position: absolute;
+    top: 18%;
+    left: 26.5%;
+    @media screen and (max-width: 1200px) {
+      left: 275px;
+    }
+  }
+}
