@@ -7,38 +7,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Ivan Ermilov</title>
 </head>
 
 <body>
     <header class="header">
         <div class="container container_flex">
-            <div class="header__logo">
-                <img src="/img/logo.png" alt="logo">
+            <div class="header__logo" target-id="home">
+                <img src="./img/logo.png" alt="logo">
             </div>
             <nav class="header__nav">
                 <ul class="nav__list">
                     <li class="nav__list-item">
-                        <a href="" class="nav__list-item__link"><span>H</span>ome</a>
+                        <a href="#home" target-id="home" class="nav__list-item__link"><span>H</span>ome</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="" class="nav__list-item__link"><span>A</span>bout</a>
+                        <a href="#about" target-id="about" class="nav__list-item__link"><span>A</span>bout</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="" class="nav__list-item__link"><span>L</span>essons</a>
+                        <a href="#lessons" target-id="lessons" class="nav__list-item__link"><span>L</span>essons</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="" class="nav__list-item__link"><span>C</span>ontact</a>
+                        <a href="#contact" target-id="contact" class="nav__list-item__link"><span>C</span>ontact</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="section section_main">
+        <section class="section scroll section_main" id="home">
             <div class="section__bg-image">
-                <img src="/img/drum_studio.jpg" alt="main-bg">
+                <img src="./img/drum_studio.jpg" alt="main-bg">
             </div>
             <div class="section__overlay"></div>
             <div class="section__content">
@@ -52,7 +52,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section scroll" id="about">
             <div class="container">
                 <h4 class="section__title"><span>A</span>bout</h4>
                 <div class="content">
@@ -92,7 +92,7 @@
                     <div class="social-item">
                         <div class="social-item__name">Instagram</div>
                         <div class="social-item__frame">
-                            <img src="/img/insta.jpg" alt="">
+                            <img src="./img/insta.jpg" alt="">
                         </div>
                         <div class="social-item__desc">Sed scelerisque dolor at mauris hendrerit, id congue dui pretium.
                             Maecenas quis lorem suscipi</div>
@@ -102,7 +102,7 @@
                         <div class="social-item__name">Soundcloud</div>
                         <div class="social-item__frame">
                             <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-                                src=" https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&amp;{ ADD YOUR PARAMETERS HERE }">
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&amp;{ ADD YOUR PARAMETERS HERE }">
                             </iframe>
                         </div>
                         <div class="social-item__desc">Sed scelerisque dolor at mauris hendrerit, id congue dui pretium.
@@ -112,7 +112,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section scroll" id="lessons">
             <div class="container">
                 <div class="section__title-container">
                     <h4 class="section__title"><span>L</span>essons</h4>
@@ -149,12 +149,12 @@
                             auctor risus. Sed tempus commodo condimentum.</p>
                     </div>
                     <div class="content__image">
-                        <img src="/img/drums-1.jpg" alt="">
+                        <img src="./img/drums-1.jpg" alt="">
                     </div>
                 </div>
                 <div class="content__row">
                     <div class="content__image">
-                        <img src="/img/drums.jpg" alt="">
+                        <img src="./img/drums.jpg" alt="">
                     </div>
                     <div class="content__text">
                         <p>In sit amet est a enim eleifend sollicitudin in eget quam. Nulla facilisi. Ut vel
@@ -195,7 +195,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="scroll" id="contact">
             <div class="container">
                 <h4 class="section__title"><span>C</span>ontact me</h4>
                 <div class="form">
@@ -274,6 +274,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
